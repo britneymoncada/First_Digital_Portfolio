@@ -1,7 +1,43 @@
+@font-face {
+  font-family: "Michroma";
+  src: url(/vendors/fonts/Michroma/Michroma-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url(/vendors/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Cedarville Cursive";
+  src: url(/vendors/fonts/Cedarville_Cursive/CedarvilleCursive-Regular.ttf);
+  font-size: 60px;
+}
 .body_wrap {
   padding: 50px;
   margin: 0;
   background-color: rgb(239, 221, 196);
+  font-family: "Quicksand";
+  margin: 0;
+}
+
+.stickers_1 {
+  position: absolute;
+  top: 175px;
+  right: 50px;
+  width: 70px;
+  height: 250px;
+  opacity: 80%;
+}
+
+.stickers_2 {
+  position: absolute;
+  top: 150px;
+  left: -100px;
+  z-index: -1;
+  opacity: 80%;
+  height: 400px;
+  width: 1200px;
 }
 
 .header {
@@ -9,14 +45,28 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 0;
+}
+
+.header__title {
+  font-family: "Michroma";
+  color: rgb(102, 88, 22);
+  font-size: 60px;
+  margin: 0;
+}
+
+.header__sub-title {
+  font-family: "Cedarville Cursive";
+  font-size: 30px;
 }
 
 .header__links {
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: 60px;
-  font-size: 18px;
+  gap: 90px;
+  font-size: 30px;
+  font-family: "Cedarville Cursive";
 }
 
 .header__link {
@@ -49,6 +99,25 @@
   grid-column: 1 / 3;
   grid-row: 1 / 2;
   font-size: 20px;
+  margin-top: 25px;
+}
+
+.block__about-me-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.block_about-me-bottom-1 {
+  padding-top: 110px;
+  font-style: italic;
+  margin: 0;
+}
+
+.block_about-me-bottom-2 {
+  padding: 0;
+  text-align: center;
 }
 
 .block_contact-info {
@@ -81,7 +150,8 @@
   grid-column: 1 / 6;
   grid-row: 3 / 3;
   text-align: center;
-  font-size: 30px;
+  font-size: 60px;
+  font-family: "Cedarville Cursive";
 }
 
 .block_pic {
