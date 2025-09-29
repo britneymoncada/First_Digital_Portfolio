@@ -33,11 +33,10 @@
 .stickers_2 {
   position: absolute;
   top: 150px;
-  left: -100px;
+  left: -75px;
   z-index: -1;
   opacity: 80%;
-  height: 400px;
-  width: 1200px;
+  height: 350px;
 }
 
 .header {
