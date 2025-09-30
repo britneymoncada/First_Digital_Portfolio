@@ -39,6 +39,20 @@
   height: 350px;
 }
 
+.stickers_3 {
+  width: 155px;
+  opacity: 80%;
+}
+
+.dashed-chain {
+  position: absolute;
+  top: 525px;
+  left: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
 .header {
   height: 150px;
   display: flex;
