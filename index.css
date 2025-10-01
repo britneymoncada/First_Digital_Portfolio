@@ -10,9 +10,14 @@
 
 @font-face {
   font-family: "Cedarville Cursive";
-  src: url(/vendors/fonts/Cedarville_Cursive/CedarvilleCursive-Regular.ttf);
+  src: url(/vendors/fonts/Gruppo/Gruppo-Regular.ttf);
   font-size: 60px;
 }
+@font-face {
+  font-family: "Gruppo";
+  src: url(/vendors/fonts/Gruppo/Gruppo-Regular.ttf);
+}
+
 .body_wrap {
   padding: 50px;
   margin: 0;
@@ -123,14 +128,33 @@
 }
 
 .block_about-me-bottom-1 {
-  padding-top: 110px;
-  font-style: italic;
+  padding: 110px 0 0px 0;
   margin: 0;
+  font-family: "Gruppo";
+  letter-spacing: 10px;
+  font-size: 48px;
+  color: darkred;
+  font-weight: 900;
 }
 
 .block_about-me-bottom-2 {
   padding: 0;
   text-align: center;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  line-height: 30px;
+}
+
+.disclaimer-art {
+  background-color: #b5491f;
+  border-radius: 50%;
+  width: 30px;
+  height: 20px;
+  padding: 0 10px;
 }
 
 .block_contact-info {
