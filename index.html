@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body class="body_wrap">
+    <!-- STICKERS FOR WEBPAGE -->
+
     <img
       src="/Images/Three green dots.png"
       alt="three green dots"
       class="stickers_1"
     />
+
     <img
       src="/Images/Rectangle 0.png"
       alt="brown rectangle"
@@ -25,21 +28,21 @@
       <img src="/Images/Rectangle 2.png" alt="dashed line" class="stickers_3" />
     </div>
 
+    <!-- ABOUT ME + NAV BAR + DISCLAIMERS -->
+
     <header class="header">
-      <div class="header__title-column">
-        <h1 class="header__title">Britney Moncada</h1>
-        <h2 class="header__sub-title">Software Engineer In The Making..</h2>
-      </div>
-      <div class="header__links-column">
-        <ul class="header__links">
-          <li><a href="#about-me" class="header__link">About Me</a></li>
-          <li><a href="#projects" class="header__link">Projects</a></li>
-          <li><a href="#footer" class="header__link">Footer</a></li>
-        </ul>
-      </div>
+      <h1 class="header__title">Britney Moncada</h1>
+      <ul class="header__links">
+        <li><a href="#about-me" class="header__link">About Me</a></li>
+        <li><a href="#projects" class="header__link">Projects</a></li>
+        <li><a href="#footer" class="header__link">Footer</a></li>
+      </ul>
     </header>
+
     <div class="container">
-      <div id="about-me" class="block_about-me">
+      <!-- ABOUT ME -->
+      <div id="about-me" class="container__about-me">
+        <h2 class="container__sub-title">Software Engineer In The Making ..</h2>
         Welcome to my digital portfolio. This is my first virtual showcasing of
         my Software Engineering Projects. <br />
         <h3>Background Info:</h3>
@@ -53,29 +56,29 @@
           <li>Traveler Mom & Chess Enthusiast</li>
         </ul>
 
-        <div class="block__about-me-bottom">
-          <h3 class="block_about-me-bottom-1">! Disclaimers !</h3>
-
-          <ul class="block_about-me-bottom-2">
-            <li class="dismaliner_text">
-              This site was coded 100% by me on VSCode
-            </li>
-            <li class="dismaliner_text" class="disclaimer-art"></li>
-            <li class="dismaliner_text">
-              Illustrations were created by me using Figma & CSS
-            </li>
-            <li class="disclaimer-art"></li>
+        <!-- DISCLAIMERS -->
+        <div class="disclaimers-block">
+          <h3 class="disclaimers-block__title">! Disclaimers !</h3>
+          <ul class="disclaimers-block__list">
+            <li>This site was coded 100% by me on VSCode</li>
+            <li class="disclaimers-block__art"></li>
+            <li>Illustrations were created by me using Figma & CSS</li>
+            <li class="disclaimers-block__art"></li>
             <li>Github is being used to host my repositories online</li>
           </ul>
         </div>
       </div>
-      <div class="block block_pic">
+
+      <div class="block-pic">
         <img
           src="./Images/selfie.png"
           alt="selfie of me"
-          class="block_selfie"
+          class="block-pic__selfie"
         />
       </div>
+
+      <!-- CONTINUE REFRACTORING -->
+
       <div class="block block_site-features">
         <h4 class="block_about-site-title">About This Site</h4>
         <ul class="block_features">
