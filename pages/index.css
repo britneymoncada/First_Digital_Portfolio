@@ -27,10 +27,12 @@
   margin: 0;
 }
 
+/* STICKERS */
+
 .stickers_1 {
   position: absolute;
-  top: 175px;
-  right: 20px;
+  top: 200px;
+  right: 50px;
   width: 70px;
   height: 250px;
   opacity: 80%;
@@ -39,10 +41,10 @@
 .stickers_2 {
   position: absolute;
   top: 160px;
-  left: -75px;
+  left: -200px;
   z-index: -1;
   opacity: 80%;
-  height: 400px;
+  height: 450px;
 }
 
 .stickers_3 {
@@ -52,18 +54,20 @@
 
 .stickers_4 {
   position: absolute;
-  top: 595px;
+  top: 650px;
   left: 40px;
   display: flex;
   flex-direction: row;
   gap: 40px;
 }
 
+/* HEADER + NAV BAR */
+
 .header {
-  height: 150px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-end;
   padding: 0;
 }
 
@@ -82,6 +86,7 @@
   font-size: 30px;
   font-family: "Cedarville Cursive";
   padding: 0;
+  margin: 0;
 }
 
 .header__link {
@@ -89,11 +94,13 @@
   color: rgba(143, 61, 3, 0.875);
 }
 
+/* ABOUT ME + SELFIE + DISCLAIMERS */
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 0.4fr 0.4fr;
-  grid-gap: 40px 20px;
+  grid-template-rows: 1fr 0.4fr 0.2fr;
+
   height: 100%;
   padding: 0px;
   box-sizing: border-box;
@@ -117,6 +124,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .disclaimers-block__title {
@@ -137,7 +145,7 @@
   text-align: center;
   font-size: 24px;
   list-style: none;
-  gap: 30px;
+  gap: 25px;
   line-height: 30px;
 }
 
@@ -145,7 +153,7 @@
   background-color: #b5491f;
   border-radius: 50%;
   width: 30px;
-  height: 20px;
+  height: 30px;
   padding: 0 10px;
 }
 
@@ -154,11 +162,9 @@
   grid-row: 1 / 1;
   padding: 0px;
   margin: auto;
-  border: none;
   border-radius: 12%;
   overflow: hidden;
   height: 80%;
-  width: 70%;
 }
 
 .block-pic__selfie {
@@ -166,88 +172,99 @@
   height: 100%;
 }
 
-/* CONTINUE REFRACTORING */
+/* ABOUT SITE + CONTACT INFO */
 
 .block {
   border: solid black 1px;
-  padding: 10px;
-  border: solid black 1px;
-  padding: 10px;
+  padding: 30px;
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12), 0 1.5px 6px rgba(0, 0, 0, 0.1);
   background: #fff;
   transition: box-shadow 0.3s, transform 0.3s;
-}
-
-.block_contact-info {
-  grid-column: 3 / 6;
-  grid-row: 2 / 2;
   text-align: center;
-  margin: 0;
-  padding: 0;
 }
 
-.block_contact_links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 20px;
-  padding: 30px 60px;
-}
-
-.block_contact_link {
-  text-decoration: none;
-  outline: solid 2px black;
-  padding: 22px;
-  background-color: #79ccf0;
-  border-radius: 4px;
-  color: rgb(0, 0, 0);
-  font-size: 28px;
-}
-
-.block_link-logo {
-  width: 50px;
-  height: 50px;
-  padding-right: 12px;
-  padding-bottom: 20px;
-  border-radius: 16px;
-}
-
-.block_projects-coded {
-  grid-column: 1 / 6;
-  grid-row: 3 / 3;
-  text-align: center;
-  font-size: 60px;
-  font-family: "Cedarville Cursive";
-}
-
-.block_about-site-title {
+.block__title {
   display: flex;
   justify-content: center;
-  text-decoration: underline;
   text-underline-offset: 4px;
-  font-size: 24px;
-  margin-top: 24px;
+  font-family: "Cedarville Cursive";
+  font-size: 30px;
+  margin: 0 0 20px 0;
 }
 
 .block_site-features {
   grid-column: 1 / 3;
   grid-row: 2 / 3;
   line-height: 1.5;
+  margin-right: 50px;
+  background-color: #a3881d;
 }
 
 .block_features {
   list-style: none;
+  flex-wrap: wrap;
   display: flex;
-  gap: 24px;
-  padding: 12px;
+  justify-content: space-around;
+  gap: 40px;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
 }
 
 .block__feature {
   outline: solid 2px;
   padding: 12px;
-  background-color: #ffa8c0;
+  background-color: #ffffff;
   border-radius: 4px;
+}
+
+.block_contact-info {
+  grid-column: 3 / 6;
+  grid-row: 2 / 2;
+  margin-left: 50px;
+  background-color: #a3674f;
+}
+
+.block_contact_links {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  justify-content: space-around;
+}
+
+.block_contact_link {
+  text-decoration: none;
+  outline: solid 2px black;
+  background-color: #ffffff;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100px;
+  padding: 20px;
+}
+
+.block_link-logo {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 16px;
+}
+
+/* PROJECTS SECTION */
+
+.block_projects-coded {
+  grid-column: 1 / 6;
+  grid-row: 3 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-family: "Cedarville Cursive";
 }
 
 .block_project {
@@ -258,11 +275,17 @@
   display: flex;
   border: solid 1px black;
   margin: auto;
+  box-sizing: border-box;
 }
 
-.block_details {
-  margin: 0;
-  padding: 0;
+.project__detail {
+  font-size: 24px;
+  padding: 20px;
+}
+
+.block_project_1 {
+  grid-column: 3 / 6;
+  grid-row: 4 / 4;
 }
 
 .block_project_1_details {
@@ -270,11 +293,6 @@
   grid-row: 4 / 4;
   display: flex;
   justify-content: flex-end;
-}
-
-.block_project_1 {
-  grid-column: 3 / 6;
-  grid-row: 4 / 4;
 }
 
 .block_project_2 {
@@ -285,7 +303,12 @@
 .block_project_2_details {
   grid-column: 3 / 6;
   grid-row: 5 / 5;
-  padding-left: 30px;
+  padding-left: 80px;
+}
+
+.block_project_3 {
+  grid-column: 3 / 6;
+  grid-row: 6 / 6;
 }
 
 .block_project_3_details {
@@ -295,9 +318,27 @@
   justify-content: flex-end;
 }
 
-.block_project_3 {
+.block_project_4 {
+  grid-column: 1 / 3;
+  grid-row: 8 / 8;
+}
+
+.block_project_4_details {
   grid-column: 3 / 6;
-  grid-row: 6 / 6;
+  grid-row: 8 / 8;
+  padding-left: 80px;
+}
+
+.block_project_5 {
+  grid-column: 3 / 6;
+  grid-row: 9/ 9;
+}
+
+.block_project_5_details {
+  grid-column: 1 / 3;
+  grid-row: 9 / 9;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .iframe-wrapper {
@@ -332,9 +373,36 @@
 
 .project__title {
   font-size: 36px;
+  margin: 0;
 }
 
-.project__detail {
-  font-size: 24px;
-  padding: 20px;
+.tech-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.tech-stack__column-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.tech-stack__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tech-stack__github {
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+
+.work-history__job {
+  display: flex;
+  margin-bottom: 60px;
 }
