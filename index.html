@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./vendors/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
+
   <body class="body_wrap">
     <!-- STICKERS FOR WEBPAGE -->
 
@@ -28,19 +29,26 @@
       <img src="/Images/Rectangle 2.png" alt="dashed line" class="stickers_3" />
     </div>
 
-    <!-- ABOUT ME + NAV BAR + DISCLAIMERS -->
+    <!-- HEADER NAME + NAV BAR -->
 
     <header class="header">
       <h1 class="header__title">Britney Moncada</h1>
       <ul class="header__links">
-        <li><a href="#about-me" class="header__link">About Me</a></li>
-        <li><a href="#projects" class="header__link">Projects</a></li>
-        <li><a href="#work-history" class="header__link">Work History</a></li>
+        <li class="header__link-container">
+          <a href="#about-me" class="header__link">About Me</a>
+        </li>
+        <li class="header__link-container">
+          <a href="#projects" class="header__link">Projects</a>
+        </li>
+        <li class="header__link-container">
+          <a href="#work-history" class="header__link">Work History</a>
+        </li>
       </ul>
     </header>
 
+    <!-- ABOUT ME  -->
+
     <div class="container">
-      <!-- ABOUT ME -->
       <div id="about-me" class="container__about-me">
         <h2 class="container__sub-title">Software Engineer In The Making ..</h2>
         Welcome to my digital portfolio. This is my first virtual showcasing of
@@ -50,7 +58,11 @@
           <li>
             Currently completing a Full Stack Software Engineering Certificate
             from
-            <a href="tripleten.com">TripleTen's Online Bootcamp</a>
+            <a
+              href="https://referral.tripleten.com/ulmIRoth"
+              class="container__triple-ten-link"
+              >TripleTen's Online Bootcamp</a
+            >
           </li>
           <li>
             Associates Degree in Mathematics & General Science from Santa Monica
@@ -61,7 +73,8 @@
           <li>Traveler Mom & Chess Enthusiast</li>
         </ul>
 
-        <!-- DISCLAIMERS -->
+        <!-- DISCLAIMERS + SELFIE -->
+
         <div class="disclaimers-block">
           <h3 class="disclaimers-block__title">! Disclaimers !</h3>
           <ul class="disclaimers-block__list">
@@ -101,6 +114,8 @@
         </ul>
       </div>
 
+      <!-- CONTACT INFO -->
+
       <div class="block block_contact-info">
         <h3 class="block__title">Contact Info :</h3>
         <div class="block_contact_links">
@@ -130,28 +145,38 @@
           </a>
         </div>
       </div>
+
+      <!-- PROJECTS LIST -->
+
       <div class="block_projects-coded">
         A Preview of All My Coding Projects ...
       </div>
+
       <div id="projects" class="block_project_1_details">
         <ul class="block_project_feats">
           <li class="project_name">
-            <h3 class="project__title">Project Name: Projecto 1</h3>
-            <h2>------------ >>>>>>>>></h2>
+            <h4 class="project__name-text">
+              [ Project Name:
+              <span class="project__title">Triple Peaks Library </span>]
+            </h4>
           </li>
           <li class="project__detail">Completed On: Jan 1st, 2025</li>
           <li class="project__detail">Last Updated: Jan 100th, 2025</li>
           <li class="project__detail">
             Features Include: blah | blahblah | blahblahblah | blahblahblah
           </li>
-          <li class="project__detail">Click Here For Full Website</li>
+          <a
+            href="https://britneymoncada.github.io/TripleTen_Project_1/"
+            class="project__detail"
+            >Click Here For Full Website</a
+          >
         </ul>
       </div>
       <div class="block block_project block_project_1">
         <div class="iframe-wrap">
           <iframe
-            src="https://britneymoncada.github.io/se_project_coffeeshop/"
-            title="TripleTen CoffeeShop"
+            src="https://britneymoncada.github.io/TripleTen_Project_1/"
+            title="Triple Peaks Library"
             class="block_iframe"
           >
           </iframe>
@@ -219,7 +244,9 @@
       <div class="block_project_4_details">
         <ul class="block_project_feats">
           <li class="project_name">
-            <h3 class="project__title">Project Name: Projecto 4</h3>
+            <h3 class="project__title">
+              Project Name: JavaScript with BetaBrit
+            </h3>
             <h2><<<<<<<<<<------------</h2>
           </li>
           <li class="project__detail">Completed On: Jan 1st, 2025</li>
@@ -234,7 +261,7 @@
       <div class="block_details block_project_5_details">
         <ul class="block_project_feats">
           <li class="project_name">
-            <h3 class="project__title">Project Name: Projecto 5</h3>
+            <h3 class="project__title">Project Name: Moving Modestly</h3>
             <h2>-------------->>>>>>>>>></h2>
           </li>
           <li class="project__detail">Completed On: Jan 1st, 2025</li>
@@ -254,6 +281,30 @@
           >
           </iframe>
         </div>
+      </div>
+
+      <div class="block block_project block_project_6">
+        <div class="iframe-wrap"></div>
+        <iframe
+          src="https://britneymoncada.github.io/TripleTen_Project_1/"
+          title="TripleTen Library"
+          class="block_iframe"
+        >
+        </iframe>
+      </div>
+      <div class="block_project_6_details">
+        <ul class="block_project_feats">
+          <li class="project_name">
+            <h3 class="project__title">Project Name: The Phloetry Portal</h3>
+            <h2><<<<<<<<<<------------</h2>
+          </li>
+          <li class="project__detail">Completed On: Jan 1st, 2025</li>
+          <li class="project__detail">Last Updated: Jan 100th, 2025</li>
+          <li class="project__detail">
+            Features Include: blah | blahblah | blahblahblah | blahblahblah
+          </li>
+          <li class="project__detail">Click Here For Full Website</li>
+        </ul>
       </div>
     </div>
 
@@ -415,7 +466,7 @@
 
         <ul class="work-history__long-details">
           <li>
-            Taught grades 6th - 9th in Math, Science, History and English.
+            Taught grades 4th - 9th in Math, Science, History and English.
           </li>
           <li>
             Developed curriculum aligned with Costa Rica and American Education
