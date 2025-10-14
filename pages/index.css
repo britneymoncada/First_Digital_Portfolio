@@ -96,22 +96,32 @@
   color: rgba(143, 61, 3, 0.875);
 }
 
-/* ABOUT ME + SELFIE + DISCLAIMERS */
+/* NEW ABOUT ME CSS */
 
+<<<<<<< HEAD
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 0.4fr 0.2fr;
+=======
+.about-container {
+  display: flex;
+  flex-direction: row;
+>>>>>>> aboutme
 }
 
-.container__about-me {
-  grid-column: 1 / 3;
-  grid-row: 1 / 2;
+.about-container__se-title {
+  font-family: "Cedarville Cursive";
+  font-size: 30px;
+}
+
+.about-container__welcome-text {
   font-size: 20px;
   margin-top: 25px;
   line-height: 1.5;
 }
 
+<<<<<<< HEAD
 .container__triple-ten-link {
   text-decoration: none;
   color: rgb(136, 46, 46);
@@ -121,9 +131,18 @@
 .container__sub-title {
   font-family: "Cedarville Cursive";
   font-size: 30px;
+=======
+.about-container__bg-info-title {
+>>>>>>> aboutme
 }
 
-.disclaimers-block {
+.about__bg-info {
+}
+
+.about__info-item {
+}
+
+.about-container__disclaimers {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,8 +150,13 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 .disclaimers-block__title {
   padding: 70px 0 0px 0;
+=======
+.about-container__disclaimers-title {
+  padding: 110px 0 0px 0;
+>>>>>>> aboutme
   margin: 0;
   font-family: "Gruppo";
   letter-spacing: 10px;
@@ -141,7 +165,7 @@
   font-weight: 900;
 }
 
-.disclaimers-block__list {
+.about-container__disclaimers__list-items {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -153,7 +177,10 @@
   line-height: 30px;
 }
 
-.disclaimers-block__art {
+.about-container__disclaimers__list-item {
+}
+
+.about-container__disclaimers-art {
   background-color: #b5491f;
   border-radius: 50%;
   width: 30px;
@@ -161,7 +188,13 @@
   padding: 0 10px;
 }
 
-.block-pic {
+.about-container__right-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container__selfie-wrapper {
   grid-column: 3 / 5;
   grid-row: 1 / 1;
   padding: 0px;
@@ -171,12 +204,12 @@
   height: 80%;
 }
 
-.block-pic__selfie {
+.about-container__selfie {
   width: 100%;
   height: 100%;
 }
 
-/* ABOUT SITE + CONTACT INFO */
+/* NEW - SITE FEATS + CONTACT INFO CSS */
 
 .block {
   border: solid black 1px;
@@ -188,7 +221,18 @@
   text-align: center;
 }
 
-.block__title {
+.info-blocks {
+  display: flex;
+  flex-direction: row;
+}
+
+.info-block__site-features {
+  line-height: 1.5;
+  margin-right: 50px;
+  background-color: #a3881d;
+}
+
+.info-block__title {
   display: flex;
   justify-content: center;
   text-underline-offset: 4px;
@@ -197,15 +241,7 @@
   margin: 0 0 20px 0;
 }
 
-.block_site-features {
-  grid-column: 1 / 3;
-  grid-row: 2 / 3;
-  line-height: 1.5;
-  margin-right: 50px;
-  background-color: #a3881d;
-}
-
-.block_features {
+.info-block_features {
   list-style: none;
   flex-wrap: wrap;
   display: flex;
@@ -216,28 +252,29 @@
   margin: 0;
 }
 
-.block__feature {
+.info-block__feature {
   outline: solid 2px;
   padding: 12px;
   background-color: #deb986;
   border-radius: 4px;
 }
 
-.block_contact-info {
-  grid-column: 3 / 6;
-  grid-row: 2 / 2;
+.info-block__contact-info {
   margin-left: 50px;
   background-color: #a3674f;
 }
 
-.block_contact_links {
+.info-block__contact-title {
+}
+
+.info-block__contact_links {
   display: flex;
   flex-direction: row;
   font-size: 20px;
   justify-content: space-around;
 }
 
-.block_contact_link {
+.info-block__contact_link {
   text-decoration: none;
   outline: solid 2px black;
   background-color: #bcaa7b;
@@ -252,10 +289,27 @@
   padding: 20px;
 }
 
+<<<<<<< HEAD
 .block_link-logo {
+=======
+.info-block__link-logo {
+  width: 50px;
+  height: 50px;
+>>>>>>> aboutme
   border-radius: 16px;
   width: 80px;
   height: 80px;
+}
+
+/* OLD ABOUT ME + SELFIE + DISCLAIMERS */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.4fr 0.2fr;
+  height: 100%;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 /* PROJECTS SECTION */
