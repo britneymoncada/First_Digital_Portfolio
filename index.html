@@ -39,54 +39,67 @@
       </ul>
     </header>
 
-    <div class="container">
-      <!-- ABOUT ME -->
-      <div id="about-me" class="container__about-me">
-        <h2 class="container__sub-title">Software Engineer In The Making ..</h2>
-        Welcome to my digital portfolio. This is my first virtual showcasing of
-        my Software Engineering Projects. <br />
-        <h3>Background Info:</h3>
-        <ul>
-          <li>
+    <!-- NEW ABOUT ME SECTION -->
+
+    <div class="about-container">
+      <div class="about-container__left-column">
+        <h2 class="about-container__se-title">
+          Software Engineer In The Making ..
+        </h2>
+        <p class="about-container__welcome-text">
+          Welcome to my digital portfolio. This is my first virtual showcasing
+          of my Software Engineering Projects.
+        </p>
+        <h3 class="about-container__bg-info-title">Background Info:</h3>
+        <ul class="about__bg-info">
+          <li class="about__info-item">
             Currently completing a Full Stack Software Engineering Certificate
-            from
-            <a href="tripleten.com">TripleTen's Online Bootcamp</a>
+            from <a href="tripleten.com">TripleTen's Online Bootcamp</a>
           </li>
-          <li>
+          <li class="about__info-item">
             Associates Degree in Mathematics & General Science from Santa Monica
             College
           </li>
-          <li>Business Bookkeeping Certificate from Santa Monica College</li>
-          <li>Former Math Teacher from 3rd grade through 12th</li>
-          <li>Traveler Mom & Chess Enthusiast</li>
+          <li class="about__info-item">
+            Business Bookkeeping Certificate from Santa Monica College
+          </li>
+          <li class="about__info-item">
+            Former Math Teacher from 3rd grade through 12th
+          </li>
+          <li class="about__info-item">Traveler Mom & Chess Enthusiast</li>
         </ul>
 
-        <!-- DISCLAIMERS -->
-        <div class="disclaimers-block">
-          <h3 class="disclaimers-block__title">! Disclaimers !</h3>
-          <ul class="disclaimers-block__list">
-            <li class="disclaimers-block__list-item">
+        <div class="about-container__disclaimers">
+          <h3 class="about-container__disclaimers-title">! Disclaimers !</h3>
+          <ul class="about-container__disclaimers__list-items">
+            <li class="about-container__disclaimers__list-item">
               This site was coded 100% by me on VSCode
             </li>
-            <li class="disclaimers-block__art"></li>
-            <li class="disclaimers-block__list-item">
+            <li class="about-container__disclaimers-art"></li>
+            <li class="about-container__disclaimers__list-item">
               Illustrations were created by me using Figma & CSS
             </li>
-            <li class="disclaimers-block__art"></li>
-            <li class="disclaimers-block__list-item">
+            <li class="about-container__disclaimers-art"></li>
+            <li class="about-container__disclaimers__list-item">
               Github is being used to host my repositories online
             </li>
           </ul>
         </div>
       </div>
 
-      <div class="block-pic">
-        <img
-          src="./Images/selfie.png"
-          alt="selfie of me"
-          class="block-pic__selfie"
-        />
+      <div class="about-container__right-column">
+        <figure class="about-container__selfie-wrapper">
+          <img
+            src="./Images/selfie.png"
+            alt="selfie of me"
+            class="about-container__selfie"
+          />
+        </figure>
       </div>
+    </div>
+
+    <div class="container">
+      <!-- OLD ABOUT ME -->
 
       <!-- CONTINUE REFRACTORING -->
 

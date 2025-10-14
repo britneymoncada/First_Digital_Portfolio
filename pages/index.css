@@ -94,32 +94,34 @@
   color: rgba(143, 61, 3, 0.875);
 }
 
-/* ABOUT ME + SELFIE + DISCLAIMERS */
+/* NEW ABOUT ME CSS */
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 0.4fr 0.2fr;
-
-  height: 100%;
-  padding: 0px;
-  box-sizing: border-box;
+.about-container {
+  display: flex;
+  flex-direction: row;
 }
 
-.container__about-me {
-  grid-column: 1 / 3;
-  grid-row: 1 / 2;
+.about-container__se-title {
+  font-family: "Cedarville Cursive";
+  font-size: 30px;
+}
+
+.about-container__welcome-text {
   font-size: 20px;
   margin-top: 25px;
   line-height: 1.5;
 }
 
-.container__sub-title {
-  font-family: "Cedarville Cursive";
-  font-size: 30px;
+.about-container__bg-info-title {
 }
 
-.disclaimers-block {
+.about__bg-info {
+}
+
+.about__info-item {
+}
+
+.about-container__disclaimers {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,7 +129,7 @@
   box-sizing: border-box;
 }
 
-.disclaimers-block__title {
+.about-container__disclaimers-title {
   padding: 110px 0 0px 0;
   margin: 0;
   font-family: "Gruppo";
@@ -137,7 +139,7 @@
   font-weight: 900;
 }
 
-.disclaimers-block__list {
+.about-container__disclaimers__list-items {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -149,7 +151,10 @@
   line-height: 30px;
 }
 
-.disclaimers-block__art {
+.about-container__disclaimers__list-item {
+}
+
+.about-container__disclaimers-art {
   background-color: #b5491f;
   border-radius: 50%;
   width: 30px;
@@ -157,7 +162,13 @@
   padding: 0 10px;
 }
 
-.block-pic {
+.about-container__right-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container__selfie-wrapper {
   grid-column: 3 / 5;
   grid-row: 1 / 1;
   padding: 0px;
@@ -167,9 +178,21 @@
   height: 80%;
 }
 
-.block-pic__selfie {
+.about-container__selfie {
   width: 100%;
   height: 100%;
+}
+
+/* ABOUT ME + SELFIE + DISCLAIMERS */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.4fr 0.2fr;
+
+  height: 100%;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 /* ABOUT SITE + CONTACT INFO */
