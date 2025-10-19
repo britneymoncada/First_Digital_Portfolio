@@ -8,27 +8,9 @@
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
 
+  <!-- BODY WRAP -->
+
   <body class="body_wrap">
-    <!-- STICKERS FOR WEBPAGE -->
-
-    <img
-      src="/Images/Three green dots.png"
-      alt="three green dots"
-      class="stickers_1"
-    />
-
-    <img
-      src="/Images/Rectangle 0.png"
-      alt="brown rectangle"
-      class="stickers_2"
-    />
-    <div class="stickers_4">
-      <img src="/Images/Rectangle 2.png" alt="dashed line" class="stickers_3" />
-      <img src="/Images/Rectangle 2.png" alt="dashed line" class="stickers_3" />
-      <img src="/Images/Rectangle 2.png" alt="dashed line" class="stickers_3" />
-      <img src="/Images/Rectangle 2.png" alt="dashed line" class="stickers_3" />
-    </div>
-
     <!-- HEADER NAME + NAV BAR -->
 
     <header class="header">
@@ -46,9 +28,7 @@
       </ul>
     </header>
 
-    <!-- ABOUT ME  -->
-
-    <!-- NEW ABOUT ME SECTION -->
+    <!-- ABOUT ME SECTION -->
 
     <div class="about-container">
       <div class="about-container__left-column">
@@ -63,7 +43,13 @@
         <ul class="about__bg-info">
           <li class="about__info-item">
             Currently completing a Full Stack Software Engineering Certificate
-            from <a href="tripleten.com">TripleTen's Online Bootcamp</a>
+            from
+            <a
+              href="https://tripleten.com/home/web/"
+              class="about-container__tt-link"
+              target="_blank"
+              >TripleTen's Online Bootcamp</a
+            >
           </li>
           <li class="about__info-item">
             Associates Degree in Mathematics & General Science from Santa Monica
@@ -78,23 +64,55 @@
           <li class="about__info-item">Traveler Mom & Chess Enthusiast</li>
         </ul>
 
+        <!-- BROWN STICKER -->
+        <img
+          src="/Images/Rectangle 0.png"
+          alt="brown rectangle"
+          class="about-container__brown-sticker"
+        />
+
+        <!-- DISCLAIMERS CONTAINER -->
+        <div class="about-container__dashed-stickers">
+          <img
+            src="/Images/Rectangle 2.png"
+            alt="dashed line"
+            class="about-container__dashed-sticker"
+          />
+          <img
+            src="/Images/Rectangle 2.png"
+            alt="dashed line"
+            class="about-container__dashed-sticker"
+          />
+          <img
+            src="/Images/Rectangle 2.png"
+            alt="dashed line"
+            class="about-container__dashed-sticker"
+          />
+          <img
+            src="/Images/Rectangle 2.png"
+            alt="dashed line"
+            class="about-container__dashed-sticker"
+          />
+        </div>
         <div class="about-container__disclaimers">
           <h3 class="about-container__disclaimers-title">! Disclaimers !</h3>
           <ul class="about-container__disclaimers__list-items">
             <li class="about-container__disclaimers__list-item">
               This site was coded 100% by me on VSCode
             </li>
-            <li class="about-container__disclaimers-art"></li>
+            <li class="about-container__red-sticker"></li>
             <li class="about-container__disclaimers__list-item">
-              Illustrations were created by me using Figma & CSS
+              Ongoing changes are being made to this site on a weekly basis
             </li>
-            <li class="about-container__disclaimers-art"></li>
+            <li class="about-container__red-sticker"></li>
             <li class="about-container__disclaimers__list-item">
               Github is being used to host my repositories online
             </li>
           </ul>
         </div>
       </div>
+
+      <!-- SELFIE CONTAINER -->
 
       <div class="about-container__right-column">
         <figure class="about-container__selfie-wrapper">
@@ -104,8 +122,16 @@
             class="about-container__selfie"
           />
         </figure>
+
+        <div class="about-container__green-stickers">
+          <div class="about-container__green-sticker"></div>
+          <div class="about-container__green-sticker"></div>
+          <div class="about-container__green-sticker"></div>
+        </div>
       </div>
     </div>
+
+    <!-- DETAILS ABOUT THIS WEBSITE -->
 
     <div class="info-blocks">
       <div class="block info-block__site-features">
@@ -119,10 +145,16 @@
         </ul>
       </div>
 
+      <!-- CONTACT INFORMATION -->
+
       <div class="block info-block__contact-info">
         <h3 class="info-block__title">Contact Info :</h3>
         <div class="info-block__contact_links">
-          <a href="bmon3.141592@gmail.com" class="info-block__contact_link">
+          <a
+            href="https://mail.google.com/mail/?view=cm&to=bmon3.141592@gmail.com"
+            target="_blank"
+            class="info-block__contact_link"
+          >
             <img
               src="./Images/google-logo.png"
               alt="gmail logo"
@@ -131,7 +163,10 @@
             Email
           </a>
 
-          <a href="linkdin.com/bmon31415" class="info-block__contact_link"
+          <a
+            href="https://www.linkedin.com/in/bmon31415/"
+            class="info-block__contact_link"
+            target="_blank"
             ><img
               src="./Images/linkdin.png"
               alt="linkdin logo"
@@ -139,7 +174,7 @@
             />
             LinkedIn
           </a>
-          <a href="whatsapp.com" class="info-block__contact_link">
+          <a href="https://wa.me/50663172610" class="info-block__contact_link">
             <img
               src="./Images/whatsapp.png"
               alt="whatsapp logo"
@@ -150,169 +185,221 @@
       </div>
     </div>
 
-    <!-- CONTINUE REFRACTORING -->
+    <!-- CODING PROJECTS -->
 
-    <div class="container">
-      <div class="block_projects-coded">
-        A Preview of All My Coding Projects ...
-      </div>
+    <div id="projects" class="block-projects-coded-title">
+      A Preview of All My Coding Projects ...
+    </div>
 
-      <div id="projects" class="block_project_1_details">
-        <ul class="block_project_feats">
-          <li class="project_name">
+    <div class="projects-container">
+      <!-- PROJECT 1 -->
+      <div class="project">
+        <ul class="project__feats">
+          <li class="project__name">
             <h4 class="project__name-text">
-              [ Project Name:
-              <span class="project__title">Triple Peaks Library </span>]
+              [ Project 1:
+              <span class="project__title">Library</span> ]
             </h4>
           </li>
-          <li class="project__detail">Completed On: Jan 1st, 2025</li>
-          <li class="project__detail">Last Updated: Jan 100th, 2025</li>
           <li class="project__detail">
-            Features Include: blah | blahblah | blahblahblah | blahblahblah
+            Built With: HTML5 & CSS3 for semantic structure and styling | BEM
+            methodology for clean, scalable code | Flexbox for organized layout
+            alignment
           </li>
+
+          <li class="project__detail">
+            🔧 Next Steps: Implement responsive layouts for mobile & tablet |
+            Add JavaScript for basic interactivity (menu filters, pop-ups) |
+            Anticipated updates: Dec 2025
+          </li>
+
+          <li class="project__detail">
+            Initial Commit: July 29th, 2025 | Last Updated: July 29th, 2025
+          </li>
+
           <a
-            href="https://britneymoncada.github.io/TripleTen_Project_1/"
+            href="https://britneymoncada.github.io/SE_Project_Library/"
             class="project__detail"
+            target="_blank"
+            rel="noopener noreferrer"
             >Click Here For Full Website</a
           >
         </ul>
       </div>
-      <div class="block block_project block_project_1">
-        <div class="iframe-wrap">
+
+      <div class="block project__preview">
+        <div class="project__preview-wrap"></div>
+        <iframe
+          src="https://britneymoncada.github.io/SE_Project_Coffeeshop/"
+          title="Coffeeshop"
+          class="project__preview-iframe"
+        >
+        </iframe>
+      </div>
+
+      <!-- PROJECT 2 -->
+
+      <div class="block project__preview">
+        <div class="project__preview-wrap">
           <iframe
-            src="https://britneymoncada.github.io/TripleTen_Project_1/"
+            src="https://britneymoncada.github.io/SE_Project_Library/"
             title="Triple Peaks Library"
-            class="block_iframe"
+            class="project__preview-iframe"
           >
           </iframe>
         </div>
       </div>
 
-      <div class="block block_project block_project_2">
-        <div class="iframe-wrap"></div>
-        <iframe
-          src="https://britneymoncada.github.io/TripleTen_Project_1/"
-          title="TripleTen Library"
-          class="block_iframe"
-        >
-        </iframe>
-      </div>
-      <div class="block_project_2_details">
-        <ul class="block_project_feats">
-          <li class="project_name">
-            <h3 class="project__title">Project Name: Projecto 2</h3>
-            <h2><<<<<<<<<<------------</h2>
+      <div class="project">
+        <ul class="project__feats">
+          <li class="project__name">
+            <h4 class="project__name-text">
+              [ Project 2:
+              <span class="project__title">Coffeeshop </span>]
+            </h4>
           </li>
-          <li class="project__detail">Completed On: Jan 1st, 2025</li>
-          <li class="project__detail">Last Updated: Jan 100th, 2025</li>
           <li class="project__detail">
-            Features Include: blah | blahblah | blahblahblah | blahblahblah
+            Built With: Embedded live project previews using iframes | CSS Grid
+            for multi-column page sections | Smooth hover & transition effects
+            for interactive polish | Custom color palette & typography for
+            branding
           </li>
-          <li class="project__detail">Click Here For Full Website</li>
+
+          <li class="project__detail">
+            🔧 Next Steps: Enhance mobile & tablet responsiveness | Add
+            accessibility features (ARIA labels, contrast adjustments) |
+            Optimize image assets for faster loading | Introduce JavaScript for
+            dynamic content updates
+          </li>
+
+          <a
+            href="https://britneymoncada.github.io/SE_Project_Library/"
+            class="project__detail"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Click Here For Full Website</a
+          >
         </ul>
       </div>
 
-      <div class="block_project_3_details">
-        <ul class="block_project_feats">
-          <li class="project_name">
-            <h3 class="project__title">Project Name: Projecto 3</h3>
-            <h2>-------------->>>>>>>>>></h2>
+      <!-- PROJECT 3 -->
+
+      <div class="project">
+        <ul class="project__feats">
+          <li class="project__name">
+            <h4 class="project__name-text">
+              [ Project 3:
+              <span class="project__title">Spots</span>]
+            </h4>
           </li>
-          <li class="project__detail">Completed On: Jan 1st, 2025</li>
-          <li class="project__detail">Last Updated: Jan 100th, 2025</li>
           <li class="project__detail">
-            Features Include: blah | blahblah | blahblahblah | blahblahblah
+            Built With: Responsive layout using CSS Grid & Flexbox | JavaScript
+            for dynamic card creation and user interactions | Modal & form
+            features for adding new posts | BEM-based CSS architecture |
+            Figma-driven design for visual consistency
           </li>
-          <li class="project__detail">Click Here For Full Website</li>
+
+          <li class="project__detail">
+            🔧 Next Steps: Improve accessibility and keyboard navigation | Add
+            animations for smoother UX | Refactor JavaScript into modular
+            components | Anticipated updates: Dec 2025
+          </li>
+
+          <li class="project__detail">
+            Initial Commit: Aug 5th, 2025 | Last Updated: Oct 18th, 2025
+          </li>
+
+          <a
+            href="https://britneymoncada.github.io/SE_Project_Library/"
+            class="project__detail"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Click Here For Full Website</a
+          >
         </ul>
       </div>
-      <div class="block block_project block_project_3">
-        <div class="iframe-wrap">
+
+      <div class="block project__preview project__preview_3">
+        <div class="project__preview-wrap">
           <iframe
             src="https://britneymoncada.github.io/se_project_spots/"
             title="TripleTen Library"
-            class="block_iframe"
+            class="project__preview-iframe"
           >
           </iframe>
         </div>
       </div>
 
-      <div class="block block_project block_project_4">
-        <div class="iframe-wrap"></div>
-        <iframe
-          src="https://britneymoncada.github.io/TripleTen_Project_1/"
-          title="TripleTen Library"
-          class="block_iframe"
+      <!-- PROJECT 4 -->
+
+      <div class="block project__preview project__preview_4">
+        <div class="project__preview-wrap"></div>
+
+        <div
+          class="project__preview-iframe project__preview-iframe-cs project__preview-iframe-cs-1"
         >
-        </iframe>
+          🔧 Coming Soon 🔧
+        </div>
       </div>
-      <div class="block_project_4_details">
-        <ul class="block_project_feats">
-          <li class="project_name">
-            <h3 class="project__title">
-              Project Name: JavaScript with BetaBrit
-            </h3>
-            <h2><<<<<<<<<<------------</h2>
+      <div class="project">
+        <ul class="project__feats">
+          <li class="project__name">
+            <h4 class="project__name-text">
+              [ Project 4:
+              <span class="project__title">Poetry Project </span>]
+            </h4>
           </li>
-          <li class="project__detail">Completed On: Jan 1st, 2025</li>
-          <li class="project__detail">Last Updated: Jan 100th, 2025</li>
-          <li class="project__detail">
-            Features Include: blah | blahblah | blahblahblah | blahblahblah
-          </li>
-          <li class="project__detail">Click Here For Full Website</li>
+          <li class="project__detail">Anticipated Launch Date: Jan, 2026</li>
         </ul>
       </div>
 
-      <div class="block_details block_project_5_details">
-        <ul class="block_project_feats">
-          <li class="project_name">
-            <h3 class="project__title">Project Name: Moving Modestly</h3>
-            <h2>-------------->>>>>>>>>></h2>
+      <!-- PROJECT 5 -->
+
+      <div class="project">
+        <ul class="project__feats">
+          <li class="project__name">
+            <h4 class="project__name-text">
+              [ Project 5:
+              <span class="project__title">Travel Tips </span>]
+            </h4>
           </li>
-          <li class="project__detail">Completed On: Jan 1st, 2025</li>
-          <li class="project__detail">Last Updated: Jan 100th, 2025</li>
-          <li class="project__detail">
-            Features Include: blah | blahblah | blahblahblah | blahblahblah
-          </li>
-          <li class="project__detail">Click Here For Full Website</li>
+          <li class="project__detail">Anticipated Launch Date: Feb, 2026</li>
         </ul>
       </div>
-      <div class="block block_project block_project_5">
-        <div class="iframe-wrap">
-          <iframe
-            src="https://britneymoncada.github.io/se_project_spots/"
-            title="TripleTen Library"
-            class="block_iframe"
-          >
-          </iframe>
+
+      <div class="block project__preview project__preview_4">
+        <div class="project__preview-wrap"></div>
+
+        <div
+          class="project__preview-iframe project__preview-iframe-cs project__preview-iframe-cs-2"
+        >
+          🔧 Coming Soon 🔧
         </div>
       </div>
 
-      <div class="block block_project block_project_6">
-        <div class="iframe-wrap"></div>
-        <iframe
-          src="https://britneymoncada.github.io/TripleTen_Project_1/"
-          title="TripleTen Library"
-          class="block_iframe"
+      <!-- PROJECT 6 -->
+
+      <div class="block project__preview project__preview_4">
+        <div class="project__preview-wrap"></div>
+
+        <div
+          class="project__preview-iframe project__preview-iframe-cs project__preview-iframe-cs-3"
         >
-        </iframe>
+          🔧 Coming Soon 🔧
+        </div>
       </div>
-      <div class="block_project_6_details">
-        <ul class="block_project_feats">
-          <li class="project_name">
-            <h3 class="project__title">Project Name: The Phloetry Portal</h3>
-            <h2><<<<<<<<<<------------</h2>
+      <div class="project">
+        <ul class="project__feats">
+          <li class="project__name">
+            <h4 class="project__name-text">
+              [ Project 6:
+              <span class="project__title">JavaScript Jungle </span>]
+            </h4>
           </li>
-          <li class="project__detail">Completed On: Jan 1st, 2025</li>
-          <li class="project__detail">Last Updated: Jan 100th, 2025</li>
-          <li class="project__detail">
-            Features Include: blah | blahblah | blahblahblah | blahblahblah
-          </li>
-          <li class="project__detail">Click Here For Full Website</li>
+          <li class="project__detail">Anticipated Launch Date: Mar, 2026</li>
         </ul>
       </div>
     </div>
-
     <!-- TECH STACK & GITHUB LINK -->
 
     <div class="tech-stack">
@@ -328,272 +415,382 @@
           <li class="tech-stack__item">Figma</li>
         </ul>
       </div>
-      <a href="https://github.com/britneymoncada" class="tech-stack__github"
+      <a
+        href="https://github.com/britneymoncada"
+        class="tech-stack__github"
+        target="_blank"
+        rel="noopener noreferrer"
         >Click here to check out my Github Account directly</a
       >
     </div>
 
     <!-- WORK HISTORY -->
 
-    <h3 id="work-history">Work History</h3>
+    <!-- JOB 1 -->
+
+    <h2 class="work-history-section-title" id="work-history">Work History</h2>
 
     <ul class="work-history__jobs">
       <li class="work-history__job">
         <ul class="work-history__short-details">
-          <li>Mathematics Teacher</li>
-          <li>Blue Valley School</li>
-          <li>ESCAZU, COSTA RICA</li>
-          <li>JULY 2023 - DECEMBER 2024</li>
+          <li class="work-history__detail work-history__detail-position">
+            Mathematics Teacher
+          </li>
+          <li class="work-history__detail work-history__detail-company">
+            Blue Valley School
+          </li>
+          <li class="work-history__detail work-history__detail-location">
+            ESCAZU, COSTA RICA
+          </li>
+          <li class="work-history__detail work-history__detail-date">
+            JULY 2023 - DECEMBER 2024
+          </li>
         </ul>
 
         <ul class="work-history__long-details">
           <li>
-            Taught Math from 4th to 6th grade students in English, integrating
-            technology as a core component to enhance learning and create an
-            engaging classroom environment.
+            Taught Math (grades 4–6) in English, integrating technology to
+            create engaging lessons.
           </li>
           <li>
-            Created and developed the 6th grade Math curriculum, along with
-            differentiated lessons, assessments, and course materials to meet
-            the needs of diverse learners.
+            Developed 6th-grade Math curriculum with differentiated lessons and
+            assessments.
           </li>
           <li>
-            Collaborated across departments on interdisciplinary projects,
-            communicated with families to support student progress, and
-            organized school events while handling special assignments.
+            Collaborated across departments, supported families, and organized
+            school events.
           </li>
         </ul>
       </li>
 
+      <!-- JOB 2 -->
+
       <li class="work-history__job">
         <ul class="work-history__short-details">
-          <li>Lead Waitress</li>
-          <li>Kai’s Table</li>
-          <li>LOS ANGELES, CALIFORNIA</li>
-          <li>2001 - 2002</li>
+          <li class="work-history__detail work-history__detail-position">
+            Lead Waitress
+          </li>
+          <li class="work-history__detail work-history__detail-company">
+            Kai’s Table
+          </li>
+          <li class="work-history__detail work-history__detail-location">
+            LOS ANGELES, CALIFORNIA
+          </li>
+          <li class="work-history__detail work-history__detail-date">
+            2001 - 2002
+          </li>
         </ul>
 
         <ul class="work-history__long-details">
           <li>
-            Provided exceptional service in a high-end hospitality environment,
-            taking orders, managing hookah setups, and running food and drink
-            orders for public and private events.
+            Delivered high-end hospitality service for public and private
+            events, managing orders and hookah setups.
           </li>
           <li>
-            Trained and mentored new recruits, ensuring they adhered to service
-            standards and operational procedures.
+            Trained and mentored new staff to maintain service standards and
+            efficiency.
           </li>
           <li>
-            Managed shift opening and closing duties, ensuring smooth operations
-            and inventory control.
+            Handled shift openings, closings, and inventory to ensure smooth
+            daily operations.
           </li>
         </ul>
       </li>
 
+      <!-- JOB 3 -->
+
       <li class="work-history__job">
         <ul class="work-history__short-details">
-          <li>Mathematics Teacher</li>
-          <li>Centro Educativo Costa Ballena</li>
-          <li>UVITA, COSTA RICA</li>
-          <li>JANUARY 2022 - DECEMBER 2022</li>
+          <li class="work-history__detail work-history__detail-position">
+            Mathematics Teacher
+          </li>
+          <li class="work-history__detail work-history__detail-company">
+            Centro Educativo Costa Ballena
+          </li>
+          <li class="work-history__detail work-history__detail-location">
+            UVITA, COSTA RICA
+          </li>
+          <li class="work-history__detail work-history__detail-date">
+            JANUARY 2022 - DECEMBER 2022
+          </li>
         </ul>
 
         <ul class="work-history__long-details">
           <li>
-            Taught all high school math classes (9th -12th), created lesson
-            plans aligned with New York Standards, calculated and analyzed
-            student grades
+            Taught high school Math (grades 9–12) with lessons aligned to New
+            York State Standards.
           </li>
           <li>
-            Created alternative lesson plans for students with learning
-            disabilities through differentiated activities.
+            Developed differentiated lesson plans to support students with
+            diverse learning needs.
           </li>
           <li>
-            Designed and implemented school-wide math event for Pi-Day for more
-            than 100 students and adults.
+            Organized a school-wide Pi Day event for 100+ students and families.
           </li>
         </ul>
       </li>
 
+      <!-- JOB 4 -->
+
       <li class="work-history__job">
         <ul class="work-history__short-details">
-          <li>Accounting Assistant</li>
-          <li>LMW Financial</li>
-          <li>ENCINO, CALIFORNIA</li>
-          <li>AUGUST 2020 - DECEMBER 2020</li>
+          <li class="work-history__detail work-history__detail-position">
+            Accounting Assistant
+          </li>
+          <li class="work-history__detail work-history__detail-company">
+            LMW Financial
+          </li>
+          <li class="work-history__detail work-history__detail-location">
+            ENCINO, CALIFORNIA
+          </li>
+          <li class="work-history__detail work-history__detail-date">
+            AUGUST 2020 - DECEMBER 2020
+          </li>
         </ul>
 
         <ul class="work-history__long-details">
           <li>
-            Maintained records of financial documents, created Excel
-            spreadsheets to organize accounting data, encrypted sensitive
-            information.
+            Maintained financial records and organized accounting data using
+            Excel.
           </li>
           <li>
-            Scheduled client meetings via Outlook, scanned & sorted incoming
-            financial documents, mailed out necessary forms.
+            Scheduled client meetings, processed incoming documents, and mailed
+            required forms.
           </li>
           <li>
-            Deposited client checks at banks, purchased necessary office
-            supplies, managed office and client email accounts.
+            Handled bank deposits, managed office supplies, and monitored client
+            email accounts.
           </li>
         </ul>
       </li>
 
+      <!-- JOB 5 -->
+
       <li class="work-history__job">
         <ul class="work-history__short-details">
-          <li>Waitress</li>
-          <li>Nunzios BBQ Grill</li>
-          <li>VAUXHALL, NEW JERSEY</li>
-          <li>APRIL 2018 - NOVEMBER 2019</li>
+          <li class="work-history__detail work-history__detail-position">
+            Waitress
+          </li>
+          <li class="work-history__detail work-history__detail-company">
+            Nunzios BBQ Grill
+          </li>
+          <li class="work-history__detail work-history__detail-location">
+            VAUXHALL, NEW JERSEY
+          </li>
+          <li class="work-history__detail work-history__detail-date">
+            APRIL 2018 - NOVEMBER 2019
+          </li>
         </ul>
 
         <ul class="work-history__long-details">
-          <li>Bilingual (Spanish) server at Portuguese restaurant</li>
           <li>
-            Worked the register, waited the bar area, served dining room tables
-            and cleaned.
+            Provided bilingual (Spanish) service in a Portuguese restaurant
+            environment.
           </li>
           <li>
-            Maintained inventory levels, organized easy access of restaurant
-            resources and stocked supplies.
+            Handled register transactions, served bar and dining areas, and
+            maintained cleanliness standards.
+          </li>
+          <li>
+            Monitored inventory levels and organized supplies for efficient
+            service operations.
           </li>
         </ul>
       </li>
 
+      <!-- JOB 6 -->
+
       <li class="work-history__job">
         <ul class="work-history__short-details">
-          <li>Mathematics Teacher</li>
-          <li>Washington School</li>
-          <li>ESCAZU, COSTA RICA</li>
-          <li>JANURARY 2017 - DECEMBER 2017</li>
+          <li class="work-history__detail work-history__detail-position">
+            Mathematics Teacher
+          </li>
+          <li class="work-history__detail work-history__detail-company">
+            Washington School
+          </li>
+          <li class="work-history__detail work-history__detail-location">
+            ESCAZU, COSTA RICA
+          </li>
+          <li class="work-history__detail work-history__detail-date">
+            JANURARY 2017 - DECEMBER 2017
+          </li>
         </ul>
 
         <ul class="work-history__long-details">
+          <li>Taught Math, Science, History, and English for grades 4–9.</li>
           <li>
-            Taught grades 4th - 9th in Math, Science, History and English.
+            Developed curriculum aligned with Costa Rican and U.S. education
+            standards.
           </li>
           <li>
-            Developed curriculum aligned with Costa Rica and American Education
-            Standards.
+            Promoted bilingual, cross-disciplinary learning across subjects.
           </li>
-          <li>Promoted bilingual cross-disciplinary learning.</li>
         </ul>
       </li>
 
+      <!-- JOB 7 -->
+
       <li class="work-history__job">
         <ul class="work-history__short-details">
-          <li>YMCA Camp Staff</li>
-          <li>YMCA Organization</li>
-          <li>BIG BEAR, CALIFORNIA</li>
-          <li>JUNE 2016 - AUGUST 2016</li>
+          <li class="work-history__detail work-history__detail-position">
+            YMCA Camp Staff
+          </li>
+          <li class="work-history__detail work-history__detail-company">
+            YMCA Organization
+          </li>
+          <li class="work-history__detail work-history__detail-location">
+            BIG BEAR, CALIFORNIA
+          </li>
+          <li class="work-history__detail work-history__detail-date">
+            JUNE 2016 - AUGUST 2016
+          </li>
         </ul>
 
         <ul class="work-history__long-details">
           <li>
-            Led recreational activities at overnight summer camp for youth and
-            special needs groups.
+            Led recreational activities at an overnight summer camp for youth
+            and special needs participants.
           </li>
           <li>
-            Insured camped safety, facilitated engagement and supported diverse
+            Ensured camper safety, encouraged engagement, and supported diverse
             weekly programs.
           </li>
           <li>
-            Rotated between shifts as a lifeguard instructor and facilitator for
-            achery, nature hikes, arts & crafts, and yoga classes
+            Served as lifeguard and activity facilitator for archery, nature
+            hikes, arts & crafts, and yoga.
           </li>
         </ul>
       </li>
 
+      <!-- JOB 8 -->
+
       <li class="work-history__job">
         <ul class="work-history__short-details">
-          <li>Mathematics Grader</li>
-          <li>California State University of Fullerton</li>
-          <li>FULLERTON, CALIFORNIA</li>
-          <li>JANURARY 2015 - AUGUST 2016</li>
+          <li class="work-history__detail work-history__detail-position">
+            Mathematics Grader
+          </li>
+          <li class="work-history__detail work-history__detail-company">
+            California State University of Fullerton
+          </li>
+          <li class="work-history__detail work-history__detail-location">
+            FULLERTON, CALIFORNIA
+          </li>
+          <li class="work-history__detail work-history__detail-date">
+            JANURARY 2015 - AUGUST 2016
+          </li>
         </ul>
 
         <ul class="work-history__long-details">
           <li>
-            Evaluated and graded homework for a Business Calculus course,
-            ensuring accuracy and consistency.
+            Evaluated and graded Business Calculus assignments for accuracy and
+            consistency.
           </li>
           <li>
-            Provided constructive feedback to strengthen student understanding.
+            Provided detailed feedback to strengthen student comprehension and
+            performance.
           </li>
           <li>
-            Managed grade entry in the online system, and submitted organized
-            weekly reports to the Business Calculus Professor.
+            Recorded grades and submitted organized weekly reports to the course
+            professor.
           </li>
         </ul>
       </li>
 
+      <!-- JOB 9 -->
+
       <li class="work-history__job">
         <ul class="work-history__short-details">
-          <li>Chess Coach</li>
-          <li>Academic Chess</li>
-          <li>LAGUNA NIGEL, CALIFORNIA</li>
-          <li>JANURARY 2015 - OCT 2016</li>
+          <li class="work-history__detail work-history__detail-position">
+            Chess Coach
+          </li>
+          <li class="work-history__detail work-history__detail-company">
+            Academic Chess
+          </li>
+          <li class="work-history__detail work-history__detail-location">
+            LAGUNA NIGEL, CALIFORNIA
+          </li>
+          <li class="work-history__detail work-history__detail-date">
+            JANURARY 2015 - OCT 2016
+          </li>
         </ul>
 
         <ul class="work-history__long-details">
           <li>
-            Coached elementary students in chess fundamentals and strategy.
+            Coached elementary students in chess fundamentals, strategy, and
+            critical thinking.
           </li>
           <li>
-            Delivered interactive lessons, evaluated skill levels and fostered
-            critical thinking through play.
+            Delivered interactive lessons and assessed individual skill levels
+            through gameplay.
           </li>
           <li>
-            Facilitaed and ran the end of the season chess competition for
+            Facilitated and organized end-of-season chess tournaments for
             enrolled students.
           </li>
         </ul>
       </li>
 
+      <!-- JOB 10 -->
+
       <li class="work-history__job">
         <ul class="work-history__short-details">
-          <li>Teacher</li>
-          <li>USC - Kinder2College</li>
-          <li>LOS ANGELES, CALIFORNIA</li>
-          <li>AUGUST 2014 - OCT 2016</li>
+          <li class="work-history__detail work-history__detail-position">
+            Teacher
+          </li>
+          <li class="work-history__detail work-history__detail-company">
+            USC - Kinder2College
+          </li>
+          <li class="work-history__detail work-history__detail-location">
+            LOS ANGELES, CALIFORNIA
+          </li>
+          <li class="work-history__detail work-history__detail-date">
+            AUGUST 2014 - OCT 2016
+          </li>
         </ul>
         <ul class="work-history__long-details">
           <li>
-            Designed and implemented a 9–12 week curriculum for male students
-            from low-income families.
+            Designed and taught a 9–12 week literacy curriculum for male
+            students from low-income families.
           </li>
           <li>
-            Focused on strengthening reading and writing skills through creative
-            projects.
+            Strengthened reading and writing skills through creative,
+            project-based learning.
           </li>
           <li>
-            Created engaging, interactive lessons to foster literacy development
-            and a positive learning experience.
+            Delivered engaging, interactive lessons to promote literacy and a
+            positive classroom experience.
           </li>
         </ul>
       </li>
 
       <li class="work-history__job">
         <ul class="work-history__short-details">
-          <li>Tutor</li>
-          <li>CSUF - America Reads & Counts</li>
-          <li>FULLERTON, CALIFORNIA</li>
-          <li>AUGUST 2014 - OCT 2016</li>
+          <li class="work-history__detail work-history__detail-position">
+            Tutor
+          </li>
+          <li class="work-history__detail work-history__detail-company">
+            CSUF - America Reads & Counts
+          </li>
+          <li class="work-history__detail work-history__detail-location">
+            FULLERTON, CALIFORNIA
+          </li>
+          <li class="work-history__detail work-history__detail-date">
+            AUGUST 2014 - OCT 2016
+          </li>
         </ul>
 
         <ul class="work-history__long-details">
           <li>
-            Delivered Math and English tutoring to elementary students in
-            schools and community centers
+            Provided Math and English tutoring to elementary students in schools
+            and community centers.
           </li>
           <li>
-            Specialized in supporting Spanish-speaking learners acquiring
-            English as a second language.
+            Supported Spanish-speaking learners developing English as a second
+            language.
           </li>
           <li>
-            Provided personalized private lessons to enhance academic
-            performance.
+            Delivered personalized lessons to strengthen academic performance
+            and confidence.
           </li>
         </ul>
       </li>
