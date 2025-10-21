@@ -15,24 +15,26 @@
 
     <header class="header">
       <h1 class="header__title">Britney Moncada</h1>
-      <ul class="header__links">
-        <li class="header__link-container">
-          <a href="#about-me" class="header__link">About Me</a>
-        </li>
-        <li class="header__link-container">
-          <a href="#projects" class="header__link">Projects</a>
-        </li>
-        <li class="header__link-container">
-          <a href="#work-history" class="header__link">Work History</a>
-        </li>
-      </ul>
+      <nav class="header__nav">
+        <ul class="header__links">
+          <li class="header__link-container">
+            <a href="#about-me" class="header__link">About Me</a>
+          </li>
+          <li class="header__link-container">
+            <a href="#projects" class="header__link">Projects</a>
+          </li>
+          <li class="header__link-container">
+            <a href="#work-history" class="header__link">Work History</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- ABOUT ME SECTION -->
 
     <div class="about-container">
       <div class="about-container__left-column">
-        <h2 class="about-container__se-title">
+        <h2 class="about-container__se-title" id="about-me">
           Software Engineer In The Making ..
         </h2>
         <p class="about-container__welcome-text">
@@ -65,34 +67,14 @@
         </ul>
 
         <!-- BROWN STICKER -->
-        <img
-          src="/Images/Rectangle 0.png"
-          alt="brown rectangle"
-          class="about-container__brown-sticker"
-        />
+        <div class="about-container__brown-sticker"></div>
 
         <!-- DISCLAIMERS CONTAINER -->
         <div class="about-container__dashed-stickers">
-          <img
-            src="/Images/Rectangle 2.png"
-            alt="dashed line"
-            class="about-container__dashed-sticker"
-          />
-          <img
-            src="/Images/Rectangle 2.png"
-            alt="dashed line"
-            class="about-container__dashed-sticker"
-          />
-          <img
-            src="/Images/Rectangle 2.png"
-            alt="dashed line"
-            class="about-container__dashed-sticker"
-          />
-          <img
-            src="/Images/Rectangle 2.png"
-            alt="dashed line"
-            class="about-container__dashed-sticker"
-          />
+          <div class="about-container__dashed-sticker"></div>
+          <div class="about-container__dashed-sticker"></div>
+          <div class="about-container__dashed-sticker"></div>
+          <div class="about-container__dashed-sticker"></div>
         </div>
         <div class="about-container__disclaimers">
           <h3 class="about-container__disclaimers-title">! Disclaimers !</h3>
@@ -193,211 +175,222 @@
 
     <div class="projects-container">
       <!-- PROJECT 1 -->
-      <div class="project">
-        <ul class="project__feats">
-          <li class="project__name">
-            <h4 class="project__name-text">
-              [ Project 1:
-              <span class="project__title">Library</span> ]
-            </h4>
-          </li>
-          <li class="project__detail">
-            Built With: HTML5 & CSS3 for semantic structure and styling | BEM
-            methodology for clean, scalable code | Flexbox for organized layout
-            alignment
-          </li>
+      <div class="project-pair">
+        <div class="project">
+          <ul class="project__feats">
+            <li class="project__name">
+              <h4 class="project__name-text">
+                [ Project 1:
+                <span class="project__title">Library</span> ]
+              </h4>
+            </li>
+            <li class="project__detail">
+              Built With: HTML5 & CSS3 for semantic structure and styling | BEM
+              methodology for clean, scalable code | Flexbox for organized
+              layout alignment
+            </li>
 
-          <li class="project__detail">
-            🔧 Next Steps: Implement responsive layouts for mobile & tablet |
-            Add JavaScript for basic interactivity (menu filters, pop-ups) |
-            Anticipated updates: Dec 2025
-          </li>
+            <li class="project__detail">
+              🔧 Next Steps: Implement responsive layouts for mobile & tablet |
+              Add JavaScript for basic interactivity (menu filters, pop-ups) |
+              Anticipated updates: Dec 2025
+            </li>
 
-          <li class="project__detail">
-            Initial Commit: July 29th, 2025 | Last Updated: July 29th, 2025
-          </li>
+            <li class="project__detail">
+              Initial Commit: July 29th, 2025 | Last Updated: July 29th, 2025
+            </li>
 
-          <a
-            href="https://britneymoncada.github.io/SE_Project_Library/"
-            class="project__detail"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Click Here For Full Website</a
-          >
-        </ul>
-      </div>
+            <a
+              href="https://britneymoncada.github.io/SE_Project_Library/"
+              class="project__detail"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Click Here For Full Website</a
+            >
+          </ul>
+        </div>
 
-      <div class="block project__preview">
-        <div class="project__preview-wrap"></div>
-        <iframe
-          src="https://britneymoncada.github.io/SE_Project_Coffeeshop/"
-          title="Coffeeshop"
-          class="project__preview-iframe"
-        >
-        </iframe>
-      </div>
-
-      <!-- PROJECT 2 -->
-
-      <div class="block project__preview">
-        <div class="project__preview-wrap">
+        <div class="block project__preview">
+          <div class="project__preview-wrap"></div>
           <iframe
-            src="https://britneymoncada.github.io/SE_Project_Library/"
-            title="Triple Peaks Library"
+            src="https://britneymoncada.github.io/SE_Project_Coffeeshop/"
+            title="Coffeeshop"
             class="project__preview-iframe"
           >
           </iframe>
         </div>
       </div>
 
-      <div class="project">
-        <ul class="project__feats">
-          <li class="project__name">
-            <h4 class="project__name-text">
-              [ Project 2:
-              <span class="project__title">Coffeeshop </span>]
-            </h4>
-          </li>
-          <li class="project__detail">
-            Built With: Embedded live project previews using iframes | CSS Grid
-            for multi-column page sections | Smooth hover & transition effects
-            for interactive polish | Custom color palette & typography for
-            branding
-          </li>
+      <!-- PROJECT 2 -->
+      <div class="project-pair">
+        <div class="block project__preview">
+          <div class="project__preview-wrap">
+            <iframe
+              src="https://britneymoncada.github.io/SE_Project_Library/"
+              title="Triple Peaks Library"
+              class="project__preview-iframe"
+            >
+            </iframe>
+          </div>
+        </div>
 
-          <li class="project__detail">
-            🔧 Next Steps: Enhance mobile & tablet responsiveness | Add
-            accessibility features (ARIA labels, contrast adjustments) |
-            Optimize image assets for faster loading | Introduce JavaScript for
-            dynamic content updates
-          </li>
+        <div class="project">
+          <ul class="project__feats">
+            <li class="project__name">
+              <h4 class="project__name-text">
+                [ Project 2:
+                <span class="project__title">Coffeeshop </span>]
+              </h4>
+            </li>
+            <li class="project__detail">
+              Built With: Embedded live project previews using iframes | CSS
+              Grid for multi-column page sections | Smooth hover & transition
+              effects for interactive polish | Custom color palette & typography
+              for branding
+            </li>
 
-          <a
-            href="https://britneymoncada.github.io/SE_Project_Library/"
-            class="project__detail"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Click Here For Full Website</a
-          >
-        </ul>
+            <li class="project__detail">
+              🔧 Next Steps: Enhance mobile & tablet responsiveness | Add
+              accessibility features (ARIA labels, contrast adjustments) |
+              Optimize image assets for faster loading | Introduce JavaScript
+              for dynamic content updates
+            </li>
+
+            <a
+              href="https://britneymoncada.github.io/SE_Project_Library/"
+              class="project__detail"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Click Here For Full Website</a
+            >
+          </ul>
+        </div>
       </div>
 
       <!-- PROJECT 3 -->
+      <div class="project-pair">
+        <div class="project">
+          <ul class="project__feats">
+            <li class="project__name">
+              <h4 class="project__name-text">
+                [ Project 3:
+                <span class="project__title">Spots</span>]
+              </h4>
+            </li>
+            <li class="project__detail">
+              Built With: Responsive layout using CSS Grid & Flexbox |
+              JavaScript for dynamic card creation and user interactions | Modal
+              & form features for adding new posts | BEM-based CSS architecture
+              | Figma-driven design for visual consistency
+            </li>
 
-      <div class="project">
-        <ul class="project__feats">
-          <li class="project__name">
-            <h4 class="project__name-text">
-              [ Project 3:
-              <span class="project__title">Spots</span>]
-            </h4>
-          </li>
-          <li class="project__detail">
-            Built With: Responsive layout using CSS Grid & Flexbox | JavaScript
-            for dynamic card creation and user interactions | Modal & form
-            features for adding new posts | BEM-based CSS architecture |
-            Figma-driven design for visual consistency
-          </li>
+            <li class="project__detail">
+              🔧 Next Steps: Improve accessibility and keyboard navigation | Add
+              animations for smoother UX | Refactor JavaScript into modular
+              components | Anticipated updates: Dec 2025
+            </li>
 
-          <li class="project__detail">
-            🔧 Next Steps: Improve accessibility and keyboard navigation | Add
-            animations for smoother UX | Refactor JavaScript into modular
-            components | Anticipated updates: Dec 2025
-          </li>
+            <li class="project__detail">
+              Initial Commit: Aug 5th, 2025 | Last Updated: Oct 18th, 2025
+            </li>
 
-          <li class="project__detail">
-            Initial Commit: Aug 5th, 2025 | Last Updated: Oct 18th, 2025
-          </li>
+            <a
+              href="https://britneymoncada.github.io/SE_Project_Library/"
+              class="project__detail"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Click Here For Full Website</a
+            >
+          </ul>
+        </div>
 
-          <a
-            href="https://britneymoncada.github.io/SE_Project_Library/"
-            class="project__detail"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Click Here For Full Website</a
-          >
-        </ul>
-      </div>
-
-      <div class="block project__preview project__preview_3">
-        <div class="project__preview-wrap">
-          <iframe
-            src="https://britneymoncada.github.io/se_project_spots/"
-            title="TripleTen Library"
-            class="project__preview-iframe"
-          >
-          </iframe>
+        <div class="block project__preview project__preview_3">
+          <div class="project__preview-wrap">
+            <iframe
+              src="https://britneymoncada.github.io/se_project_spots/"
+              title="TripleTen Library"
+              class="project__preview-iframe"
+            >
+            </iframe>
+          </div>
         </div>
       </div>
 
       <!-- PROJECT 4 -->
+      <div class="project-pair">
+        <div class="block project__preview project__preview_4">
+          <div class="project__preview-wrap project__preview-wrap-1"></div>
 
-      <div class="block project__preview project__preview_4">
-        <div class="project__preview-wrap"></div>
-
-        <div
-          class="project__preview-iframe project__preview-iframe-cs project__preview-iframe-cs-1"
-        >
-          🔧 Coming Soon 🔧
+          <div
+            class="project__preview-iframe project__preview-iframe-cs project__preview-iframe-cs-1"
+          >
+            🔧 Coming Soon 🔧
+          </div>
+        </div>
+        <div class="project">
+          <ul class="project__feats">
+            <li class="project__name">
+              <h4 class="project__name-text">
+                [ Project 4:
+                <span class="project__title">Poetry Project </span>]
+              </h4>
+            </li>
+            <li class="project__detail">
+              Anticipated Launch Date: Spring 2026
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="project">
-        <ul class="project__feats">
-          <li class="project__name">
-            <h4 class="project__name-text">
-              [ Project 4:
-              <span class="project__title">Poetry Project </span>]
-            </h4>
-          </li>
-          <li class="project__detail">Anticipated Launch Date: Jan, 2026</li>
-        </ul>
-      </div>
-
       <!-- PROJECT 5 -->
+      <div class="project-pair">
+        <div class="project">
+          <ul class="project__feats">
+            <li class="project__name">
+              <h4 class="project__name-text">
+                [ Project 5:
+                <span class="project__title">Travel Tips </span>]
+              </h4>
+            </li>
+            <li class="project__detail">
+              Anticipated Launch Date: Spring 2026
+            </li>
+          </ul>
+        </div>
 
-      <div class="project">
-        <ul class="project__feats">
-          <li class="project__name">
-            <h4 class="project__name-text">
-              [ Project 5:
-              <span class="project__title">Travel Tips </span>]
-            </h4>
-          </li>
-          <li class="project__detail">Anticipated Launch Date: Feb, 2026</li>
-        </ul>
-      </div>
+        <div class="block project__preview project__preview_4">
+          <div class="project__preview-wrap project__preview-wrap-2"></div>
 
-      <div class="block project__preview project__preview_4">
-        <div class="project__preview-wrap"></div>
-
-        <div
-          class="project__preview-iframe project__preview-iframe-cs project__preview-iframe-cs-2"
-        >
-          🔧 Coming Soon 🔧
+          <div
+            class="project__preview-iframe project__preview-iframe-cs project__preview-iframe-cs-2"
+          >
+            🔧 Coming Soon 🔧
+          </div>
         </div>
       </div>
-
       <!-- PROJECT 6 -->
+      <div class="project-pair">
+        <div class="block project__preview project__preview_4">
+          <div class="project__preview-wrap project__preview-wrap-3"></div>
 
-      <div class="block project__preview project__preview_4">
-        <div class="project__preview-wrap"></div>
-
-        <div
-          class="project__preview-iframe project__preview-iframe-cs project__preview-iframe-cs-3"
-        >
-          🔧 Coming Soon 🔧
+          <div
+            class="project__preview-iframe project__preview-iframe-cs project__preview-iframe-cs-3"
+          >
+            🔧 Coming Soon 🔧
+          </div>
         </div>
-      </div>
-      <div class="project">
-        <ul class="project__feats">
-          <li class="project__name">
-            <h4 class="project__name-text">
-              [ Project 6:
-              <span class="project__title">JavaScript Jungle </span>]
-            </h4>
-          </li>
-          <li class="project__detail">Anticipated Launch Date: Mar, 2026</li>
-        </ul>
+        <div class="project">
+          <ul class="project__feats">
+            <li class="project__name">
+              <h4 class="project__name-text">
+                [ Project 6:
+                <span class="project__title">JavaScript Jungle </span>]
+              </h4>
+            </li>
+            <li class="project__detail">
+              Anticipated Launch Date: Spring 2026
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <!-- TECH STACK & GITHUB LINK -->
@@ -477,7 +470,7 @@
             LOS ANGELES, CALIFORNIA
           </li>
           <li class="work-history__detail work-history__detail-date">
-            2001 - 2002
+            JANURARY 2023 - JUNE 2023
           </li>
         </ul>
 
