@@ -846,12 +846,17 @@
   }
 
   .about__info-item {
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 1.5;
   }
   .about-container__disclaimers-title {
     margin: 30px 0 0 0;
     padding: 0;
     font-size: 40px;
+  }
+
+  .about-container__disclaimers__list-items {
+    padding: 0;
   }
 
   .projects-container {
@@ -899,6 +904,14 @@
 }
 
 @media screen and (max-width: 759px) {
+  .body_wrap {
+    padding: 25px;
+  }
+
+  .header {
+    align-items: flex-end;
+  }
+
   .header__title {
     font-size: 35px;
   }
@@ -908,12 +921,215 @@
   }
 
   .about-container__dashed-stickers {
-    top: 50px;
-    left: 30px;
+    transform: translate(-50px, -160px);
+    transition: 0.7s ease;
+    scale: 0.9;
+  }
+
+  .about-container__green-stickers {
+    gap: 15px;
+    top: 150px;
   }
 
   .about-container__green-sticker {
-    width: 55%;
-    height: 20%;
+    transition: 0.7s ease;
+    scale: 0.8;
+  }
+
+  .about-container__brown-sticker {
+    height: 250px;
+    top: 50px;
+    left: 10px;
+    width: 250px;
+    border-radius: 80%;
+  }
+
+  .about-container__se-title {
+    font-size: 30px;
+  }
+
+  .project__preview-wrap,
+  .project__preview-iframe {
+    aspect-ratio: 1;
+  }
+
+  .project__preview-iframe-cs-1,
+  .project__preview-iframe-cs-2,
+  .project__preview-iframe-cs-3,
+  .project__preview-wrap-1,
+  .project__preview-wrap-2,
+  .project__preview-wrap-3 {
+    aspect-ratio: 4 / 1;
+  }
+}
+
+@media screen and (max-width: 542px) {
+  .header__title {
+    font-size: 20px;
+  }
+  .header__links {
+    gap: 10px;
+  }
+  .header__link {
+    font-size: 14px;
+  }
+
+  .about-container__brown-sticker {
+    height: 200px;
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    border-radius: 5%;
+  }
+
+  .about-container__right-column {
+    margin-right: 0;
+    margin-top: auto;
+    scale: 0.8;
+    transition: 0.7s ease;
+  }
+
+  .about-container__green-stickers {
+    top: -50px;
+    right: -150px;
+    scale: 0.7;
+    gap: 15px;
+    flex-direction: row;
+    width: 600px;
+    height: 50px;
+    transition: 0.7s ease;
+  }
+
+  .about-container__green-sticker {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(87, 142, 121);
+    border-radius: 10%;
+  }
+
+  .about-container__dashed-stickers {
+    top: 150px;
+    left: 80px;
+  }
+
+  .about-container__dashed-sticker {
+    background-color: rgb(105, 77, 105);
+    width: 45px;
+    height: 60px;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 453px) {
+  .about-container__brown-sticker {
+    opacity: 60%;
+  }
+
+  .about-container__right-column {
+    scale: 1.1;
+  }
+
+  .about-container__green-stickers {
+    top: 250px;
+    scale: 0.4;
+  }
+
+  .about-container__welcome-text {
+    font-size: 18px;
+  }
+
+  .about-container__se-title {
+    font-size: 20px;
+    margin: 80px 0 0 0;
+  }
+
+  .about-container__dashed-stickers {
+    gap: 20px;
+    scale: 0.6;
+  }
+
+  .about-container__dashed-stickers {
+    gap: 50px;
+    scale: 0.6;
+    top: 50px;
+    left: 20px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .about-container__right-column {
+    scale: 1.3;
+    margin: 30px 0 0 80px;
+  }
+
+  .about-container__green-stickers {
+    scale: 0.3;
+    translate: 60px;
+    margin-top: 20px;
+  }
+
+  .about-container__se-title {
+    margin: 50px 0 20px 0;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .about-container__welcome-text {
+    padding-top: 20px;
+  }
+
+  .about-container__bg-info-title {
+    font-size: 18px;
+  }
+
+  .about__info-item {
+    font-size: 16px;
+  }
+
+  .about-container__disclaimers-title {
+    font-size: 25px;
+    letter-spacing: 5px;
+  }
+
+  .about-container__disclaimers__list-item {
+    font-size: 16px;
+  }
+
+  .info-block__title {
+    font-size: 20px;
+  }
+
+  .info-block__feature {
+    font-size: 16px;
+  }
+
+  .info-block__contact_link {
+    font-size: 16px;
+  }
+
+  .work-history__job {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project__preview {
+    width: 120%;
+  }
+
+  .project__title {
+    font-size: 16px;
+  }
+  .project__name-text {
+    font-size: 16px;
+  }
+
+  .project__detail {
+    font-size: 16px;
+  }
+
+  .project__preview-iframe-cs-1,
+  .project__preview-iframe-cs-2,
+  .project__preview-iframe-cs-3 {
+    font-size: 20px;
   }
 }
