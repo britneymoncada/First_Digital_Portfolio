@@ -3,27 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Won</title>
+
+    <title>Britney Moncada | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio website of Britney Moncada – showcasing web development projects and teaching experience."
+    />
+    <meta
+      name="keywords"
+      content="Britney Moncada, portfolio, software developer, web development, HTML, CSS, TripleTen, Madame MathMagics, Math, Education, Stem, Chess, Travel"
+    />
+    <meta name="author" content="Britney Moncada" />
+
+    <link rel="icon" href="./Images/favicon.webp" type="image/webp" />
+
     <link rel="stylesheet" href="./vendors/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
 
-  <!-- BODY WRAP -->
-
   <body class="body_wrap">
+    <!-- BODY WRAP -->
     <!-- HEADER NAME + NAV BAR -->
 
     <header class="header">
       <h1 class="header__title">Britney Moncada</h1>
       <nav class="header__nav">
         <ul class="header__links">
-          <li class="header__link-container">
+          <li>
             <a href="#about-me" class="header__link">About Me</a>
           </li>
-          <li class="header__link-container">
+          <li>
             <a href="#projects" class="header__link">Projects</a>
           </li>
-          <li class="header__link-container">
+          <li>
             <a href="#work-history" class="header__link">Work History</a>
           </li>
         </ul>
@@ -32,23 +44,23 @@
 
     <!-- ABOUT ME SECTION -->
 
-    <div class="about-container">
-      <div class="about-container__left-column">
-        <h2 class="about-container__se-title" id="about-me">
+    <div class="about">
+      <div class="about__column-left">
+        <h2 class="about__subtitle" id="about-me">
           Software Engineer In The Making ..
         </h2>
-        <p class="about-container__welcome-text">
+        <p class="about__welcome-text">
           Welcome to my digital portfolio. This is my first virtual showcasing
           of my Software Engineering Projects.
         </p>
-        <h3 class="about-container__bg-info-title">Background Info:</h3>
-        <ul class="about__bg-info">
+        <h3 class="about__background-title">Background Info:</h3>
+        <ul class="about__bg-list">
           <li class="about__info-item">
             Currently completing a Full Stack Software Engineering Certificate
             from
             <a
               href="https://tripleten.com/home/web/"
-              class="about-container__tt-link"
+              class="about__tt-link"
               target="_blank"
               >TripleTen's Online Bootcamp</a
             >
@@ -67,27 +79,27 @@
         </ul>
 
         <!-- BROWN STICKER -->
-        <div class="about-container__brown-sticker"></div>
+        <div class="about__sticker-brown"></div>
 
         <!-- DISCLAIMERS CONTAINER -->
-        <div class="about-container__dashed-stickers">
-          <div class="about-container__dashed-sticker"></div>
-          <div class="about-container__dashed-sticker"></div>
-          <div class="about-container__dashed-sticker"></div>
-          <div class="about-container__dashed-sticker"></div>
+        <div class="about__dashed-stickers">
+          <div class="about__sticker-dashed"></div>
+          <div class="about__sticker-dashed"></div>
+          <div class="about__sticker-dashed"></div>
+          <div class="about__sticker-dashed"></div>
         </div>
-        <div class="about-container__disclaimers">
-          <h3 class="about-container__disclaimers-title">! Disclaimers !</h3>
-          <ul class="about-container__disclaimers__list-items">
-            <li class="about-container__disclaimers__list-item">
+        <div class="about__disclaimers-items">
+          <h3 class="about__disclaimers-title">! Disclaimers !</h3>
+          <ul class="about__disclaimers-list">
+            <li class="about__disclaimers-item">
               This site was coded 100% by me on VSCode
             </li>
-            <li class="about-container__red-sticker"></li>
-            <li class="about-container__disclaimers__list-item">
+            <li class="about__sticker-red"></li>
+            <li class="about__disclaimers-item">
               Ongoing changes are being made to this site on a weekly basis
             </li>
-            <li class="about-container__red-sticker"></li>
-            <li class="about-container__disclaimers__list-item">
+            <li class="about__sticker-red"></li>
+            <li class="about__disclaimers-item">
               Github is being used to host my repositories online
             </li>
           </ul>
@@ -96,19 +108,19 @@
 
       <!-- SELFIE CONTAINER -->
 
-      <div class="about-container__right-column">
-        <figure class="about-container__selfie-wrapper">
+      <div class="about__column-right">
+        <figure class="about__selfie-wrapper" alt="Photo of Britney Moncada">
           <img
-            src="./Images/selfie.png"
+            src="./Images/selfie.webp"
             alt="selfie of me"
-            class="about-container__selfie"
+            class="about__selfie"
           />
         </figure>
 
-        <div class="about-container__green-stickers">
-          <div class="about-container__green-sticker"></div>
-          <div class="about-container__green-sticker"></div>
-          <div class="about-container__green-sticker"></div>
+        <div class="about__stickers-green">
+          <div class="about__sticker-green"></div>
+          <div class="about__sticker-green"></div>
+          <div class="about__sticker-green"></div>
         </div>
       </div>
     </div>
@@ -117,8 +129,8 @@
 
     <div class="info-blocks">
       <div class="block info-block__site-features">
-        <h4 class="info-block__title">This Website's Features :</h4>
-        <ul class="info-block_features">
+        <div class="info-block__title">This Website's Features :</div>
+        <ul class="info-block__features">
           <li class="info-block__feature">HTML Structure</li>
           <li class="info-block__feature">CSS Styling</li>
           <li class="info-block__feature">Flex grid</li>
@@ -131,14 +143,14 @@
 
       <div class="block info-block__contact-info">
         <h3 class="info-block__title">Contact Info :</h3>
-        <div class="info-block__contact_links">
+        <div class="info-block__contact-links">
           <a
             href="https://mail.google.com/mail/?view=cm&to=bmon3.141592@gmail.com"
             target="_blank"
-            class="info-block__contact_link"
+            class="info-block__contact-link"
           >
             <img
-              src="./Images/google-logo.png"
+              src="./Images/google-logo.webp"
               alt="gmail logo"
               class="info-block__link-logo"
             />
@@ -147,18 +159,18 @@
 
           <a
             href="https://www.linkedin.com/in/bmon31415/"
-            class="info-block__contact_link"
+            class="info-block__contact-link"
             target="_blank"
             ><img
-              src="./Images/linkdin.png"
-              alt="linkdin logo"
+              src="./Images/linkedin-logo.webp"
+              alt="linkedin logo"
               class="info-block__link-logo"
             />
             LinkedIn
           </a>
-          <a href="https://wa.me/50663172610" class="info-block__contact_link">
+          <a href="https://wa.me/50663172610" class="info-block__contact-link">
             <img
-              src="./Images/whatsapp.png"
+              src="./Images/whatsapp.webp"
               alt="whatsapp logo"
               class="info-block__link-logo"
             />WhatsApp
@@ -169,7 +181,7 @@
 
     <!-- CODING PROJECTS -->
 
-    <div id="projects" class="block-projects-coded-title">
+    <div id="projects" class="projects-title">
       A Preview of All My Coding Projects ...
     </div>
 
@@ -179,10 +191,10 @@
         <div class="project">
           <ul class="project__feats">
             <li class="project__name">
-              <h4 class="project__name-text">
+              <div class="project__name-text">
                 [ Project 1:
                 <span class="project__title">Library</span> ]
-              </h4>
+              </div>
             </li>
             <li class="project__detail">
               Built With: HTML5 & CSS3 for semantic structure and styling | BEM
@@ -197,17 +209,17 @@
             </li>
 
             <li class="project__detail">
-              Initial Commit: July 29th, 2025 | Last Updated: July 29th, 2025
+              Initial Commit: July 2nd, 2025 | Last Updated: July 29th, 2025
             </li>
-
-            <a
-              href="https://britneymoncada.github.io/SE_Project_Library/"
-              class="project__detail"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Click Here For Full Website</a
-            >
           </ul>
+
+          <a
+            href="https://britneymoncada.github.io/SE_Project_Library/"
+            class="project__detail"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Click Here For Full Website</a
+          >
         </div>
 
         <div class="block project__preview">
@@ -237,10 +249,10 @@
         <div class="project">
           <ul class="project__feats">
             <li class="project__name">
-              <h4 class="project__name-text">
+              <div class="project__name-text">
                 [ Project 2:
                 <span class="project__title">Coffeeshop </span>]
-              </h4>
+              </div>
             </li>
             <li class="project__detail">
               Built With: Embedded live project previews using iframes | CSS
@@ -256,14 +268,17 @@
               for dynamic content updates
             </li>
 
-            <a
-              href="https://britneymoncada.github.io/SE_Project_Library/"
-              class="project__detail"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Click Here For Full Website</a
-            >
+            <li class="project__detail">
+              Initial Commit: July 12th, 2025 | Last Updated: July 30th, 2025
+            </li>
           </ul>
+          <a
+            href="https://britneymoncada.github.io/SE_Project_Library/"
+            class="project__detail"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Click Here For Full Website</a
+          >
         </div>
       </div>
 
@@ -272,10 +287,10 @@
         <div class="project">
           <ul class="project__feats">
             <li class="project__name">
-              <h4 class="project__name-text">
+              <div class="project__name-text">
                 [ Project 3:
-                <span class="project__title">Spots</span>]
-              </h4>
+                <span class="project__title">Spots</span> ]
+              </div>
             </li>
             <li class="project__detail">
               Built With: Responsive layout using CSS Grid & Flexbox |
@@ -293,18 +308,17 @@
             <li class="project__detail">
               Initial Commit: Aug 5th, 2025 | Last Updated: Oct 18th, 2025
             </li>
-
-            <a
-              href="https://britneymoncada.github.io/SE_Project_Library/"
-              class="project__detail"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Click Here For Full Website</a
-            >
           </ul>
+          <a
+            href="https://britneymoncada.github.io/SE_Project_Library/"
+            class="project__detail"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Click Here For Full Website</a
+          >
         </div>
 
-        <div class="block project__preview project__preview_3">
+        <div class="block project__preview">
           <div class="project__preview-wrap">
             <iframe
               src="https://britneymoncada.github.io/se_project_spots/"
@@ -318,8 +332,8 @@
 
       <!-- PROJECT 4 -->
       <div class="project-pair">
-        <div class="block project__preview project__preview_4">
-          <div class="project__preview-wrap project__preview-wrap-1"></div>
+        <div class="block project__preview">
+          <div class="project__preview-wrap project__preview-wrap_1"></div>
 
           <div
             class="project__preview-iframe project__preview-iframe-cs project__preview-iframe-cs-1"
@@ -330,10 +344,10 @@
         <div class="project">
           <ul class="project__feats">
             <li class="project__name">
-              <h4 class="project__name-text">
+              <div class="project__name-text">
                 [ Project 4:
                 <span class="project__title">Poetry Project </span>]
-              </h4>
+              </div>
             </li>
             <li class="project__detail">
               Anticipated Launch Date: Spring 2026
@@ -346,10 +360,10 @@
         <div class="project">
           <ul class="project__feats">
             <li class="project__name">
-              <h4 class="project__name-text">
+              <div class="project__name-text">
                 [ Project 5:
                 <span class="project__title">Travel Tips </span>]
-              </h4>
+              </div>
             </li>
             <li class="project__detail">
               Anticipated Launch Date: Spring 2026
@@ -357,8 +371,8 @@
           </ul>
         </div>
 
-        <div class="block project__preview project__preview_4">
-          <div class="project__preview-wrap project__preview-wrap-2"></div>
+        <div class="block project__preview">
+          <div class="project__preview-wrap project__preview-wrap_2"></div>
 
           <div
             class="project__preview-iframe project__preview-iframe-cs project__preview-iframe-cs-2"
@@ -369,8 +383,8 @@
       </div>
       <!-- PROJECT 6 -->
       <div class="project-pair">
-        <div class="block project__preview project__preview_4">
-          <div class="project__preview-wrap project__preview-wrap-3"></div>
+        <div class="block project__preview">
+          <div class="project__preview-wrap project__preview-wrap_3"></div>
 
           <div
             class="project__preview-iframe project__preview-iframe-cs project__preview-iframe-cs-3"
@@ -381,10 +395,10 @@
         <div class="project">
           <ul class="project__feats">
             <li class="project__name">
-              <h4 class="project__name-text">
+              <div class="project__name-text">
                 [ Project 6:
                 <span class="project__title">JavaScript Jungle </span>]
-              </h4>
+              </div>
             </li>
             <li class="project__detail">
               Anticipated Launch Date: Spring 2026
@@ -396,7 +410,7 @@
     <!-- TECH STACK & GITHUB LINK -->
 
     <div class="tech-stack">
-      <div class="tech-stack__details">
+      <div>
         <h3 class="tech-stack__column-title">Tech Stack</h3>
         <ul class="tech-stack__items">
           <li class="tech-stack__item">HTML5</li>
@@ -421,7 +435,7 @@
 
     <!-- JOB 1 -->
 
-    <h2 class="work-history-section-title" id="work-history">Work History</h2>
+    <h2 class="work-history__section-title" id="work-history">Work History</h2>
 
     <ul class="work-history__jobs">
       <li class="work-history__job">
@@ -441,15 +455,15 @@
         </ul>
 
         <ul class="work-history__long-details">
-          <li>
+          <li class="work-history__long-detail">
             Taught Math (grades 4–6) in English, integrating technology to
             create engaging lessons.
           </li>
-          <li>
+          <li class="work-history__long-detail">
             Developed 6th-grade Math curriculum with differentiated lessons and
             assessments.
           </li>
-          <li>
+          <li class="work-history__long-detail">
             Collaborated across departments, supported families, and organized
             school events.
           </li>
@@ -470,20 +484,20 @@
             LOS ANGELES, CALIFORNIA
           </li>
           <li class="work-history__detail work-history__detail-date">
-            JANURARY 2023 - JUNE 2023
+            JANUARY 2023 - JUNE 2023
           </li>
         </ul>
 
         <ul class="work-history__long-details">
-          <li>
+          <li class="work-history__long-detail">
             Delivered high-end hospitality service for public and private
             events, managing orders and hookah setups.
           </li>
-          <li>
+          <li class="work-history__long-detail">
             Trained and mentored new staff to maintain service standards and
             efficiency.
           </li>
-          <li>
+          <li class="work-history__long-detail">
             Handled shift openings, closings, and inventory to ensure smooth
             daily operations.
           </li>
@@ -509,15 +523,15 @@
         </ul>
 
         <ul class="work-history__long-details">
-          <li>
+          <li class="work-history__long-detail">
             Taught high school Math (grades 9–12) with lessons aligned to New
             York State Standards.
           </li>
-          <li>
+          <li class="work-history__long-detail">
             Developed differentiated lesson plans to support students with
             diverse learning needs.
           </li>
-          <li>
+          <li class="work-history__long-detail">
             Organized a school-wide Pi Day event for 100+ students and families.
           </li>
         </ul>
@@ -542,15 +556,15 @@
         </ul>
 
         <ul class="work-history__long-details">
-          <li>
+          <li class="work-history__long-detail">
             Maintained financial records and organized accounting data using
             Excel.
           </li>
-          <li>
+          <li class="work-history__long-detail">
             Scheduled client meetings, processed incoming documents, and mailed
             required forms.
           </li>
-          <li>
+          <li class="work-history__long-detail">
             Handled bank deposits, managed office supplies, and monitored client
             email accounts.
           </li>
@@ -576,15 +590,15 @@
         </ul>
 
         <ul class="work-history__long-details">
-          <li>
+          <li class="work-history__long-detail">
             Provided bilingual (Spanish) service in a Portuguese restaurant
             environment.
           </li>
-          <li>
+          <li class="work-history__long-detail">
             Handled register transactions, served bar and dining areas, and
             maintained cleanliness standards.
           </li>
-          <li>
+          <li class="work-history__long-detail">
             Monitored inventory levels and organized supplies for efficient
             service operations.
           </li>
@@ -605,17 +619,19 @@
             ESCAZU, COSTA RICA
           </li>
           <li class="work-history__detail work-history__detail-date">
-            JANURARY 2017 - DECEMBER 2017
+            JANUARY 2017 - DECEMBER 2017
           </li>
         </ul>
 
         <ul class="work-history__long-details">
-          <li>Taught Math, Science, History, and English for grades 4–9.</li>
-          <li>
+          <li class="work-history__long-detail">
+            Taught Math, Science, History, and English for grades 4–9.
+          </li>
+          <li class="work-history__long-detail">
             Developed curriculum aligned with Costa Rican and U.S. education
             standards.
           </li>
-          <li>
+          <li class="work-history__long-detail">
             Promoted bilingual, cross-disciplinary learning across subjects.
           </li>
         </ul>
@@ -640,15 +656,15 @@
         </ul>
 
         <ul class="work-history__long-details">
-          <li>
+          <li class="work-history__long-detail">
             Led recreational activities at an overnight summer camp for youth
             and special needs participants.
           </li>
-          <li>
+          <li class="work-history__long-detail">
             Ensured camper safety, encouraged engagement, and supported diverse
             weekly programs.
           </li>
-          <li>
+          <li class="work-history__long-detail">
             Served as lifeguard and activity facilitator for archery, nature
             hikes, arts & crafts, and yoga.
           </li>
@@ -669,20 +685,20 @@
             FULLERTON, CALIFORNIA
           </li>
           <li class="work-history__detail work-history__detail-date">
-            JANURARY 2015 - AUGUST 2016
+            JANUARY 2015 - AUGUST 2016
           </li>
         </ul>
 
         <ul class="work-history__long-details">
-          <li>
+          <li class="work-history__long-detail">
             Evaluated and graded Business Calculus assignments for accuracy and
             consistency.
           </li>
-          <li>
+          <li class="work-history__long-detail">
             Provided detailed feedback to strengthen student comprehension and
             performance.
           </li>
-          <li>
+          <li class="work-history__long-detail">
             Recorded grades and submitted organized weekly reports to the course
             professor.
           </li>
@@ -703,20 +719,20 @@
             LAGUNA NIGEL, CALIFORNIA
           </li>
           <li class="work-history__detail work-history__detail-date">
-            JANURARY 2015 - OCT 2016
+            JANUARY 2015 - OCT 2016
           </li>
         </ul>
 
         <ul class="work-history__long-details">
-          <li>
+          <li class="work-history__long-detail">
             Coached elementary students in chess fundamentals, strategy, and
             critical thinking.
           </li>
-          <li>
+          <li class="work-history__long-detail">
             Delivered interactive lessons and assessed individual skill levels
             through gameplay.
           </li>
-          <li>
+          <li class="work-history__long-detail">
             Facilitated and organized end-of-season chess tournaments for
             enrolled students.
           </li>
@@ -741,15 +757,15 @@
           </li>
         </ul>
         <ul class="work-history__long-details">
-          <li>
+          <li class="work-history__long-detail">
             Designed and taught a 9–12 week literacy curriculum for male
             students from low-income families.
           </li>
-          <li>
+          <li class="work-history__long-detail">
             Strengthened reading and writing skills through creative,
             project-based learning.
           </li>
-          <li>
+          <li class="work-history__long-detail">
             Delivered engaging, interactive lessons to promote literacy and a
             positive classroom experience.
           </li>
@@ -773,20 +789,43 @@
         </ul>
 
         <ul class="work-history__long-details">
-          <li>
+          <li class="work-history__long-detail">
             Provided Math and English tutoring to elementary students in schools
             and community centers.
           </li>
-          <li>
+          <li class="work-history__long-detail">
             Supported Spanish-speaking learners developing English as a second
             language.
           </li>
-          <li>
+          <li class="work-history__long-detail">
             Delivered personalized lessons to strengthen academic performance
             and confidence.
           </li>
         </ul>
       </li>
     </ul>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__text">© 2025 Britney Moncada | Madame MathMagics</p>
+        <div class="footer__links">
+          <a
+            href="https://github.com/britneymoncada"
+            class="footer__link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/bmon31415/"
+            class="footer__link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a href="mailto:bmon3.141592@gmail.com" class="footer__link">Email</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

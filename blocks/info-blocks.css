@@ -1,0 +1,73 @@
+.info-blocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.info-block__site-features {
+  max-width: 750px;
+  margin: 0px;
+  background-color: #a3881d;
+}
+
+.info-block__title {
+  display: flex;
+  justify-content: center;
+  font-family: "Cedarville Cursive";
+  font-size: 30px;
+  text-underline-offset: 4px;
+  margin: 0 0 20px 0;
+}
+
+.info-block__features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  font-size: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.info-block__feature {
+  padding: 40px;
+  border-radius: 4px;
+  outline: solid 2px;
+  background-color: #deb986;
+}
+
+.info-block__contact-info {
+  max-width: fit-content;
+  margin-left: 50px;
+  background-color: #a3674f;
+}
+
+.info-block__contact-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.info-block__contact-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 80px;
+  padding: 20px;
+  border-radius: 4px;
+  outline: solid 2px black;
+  background-color: #bcaa7b;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+.info-block__link-logo {
+  width: 80px;
+  height: 80px;
+}

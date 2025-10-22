@@ -1,0 +1,145 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about__column-left {
+  flex: 1;
+  max-width: 55%;
+}
+
+.about__subtitle {
+  font-family: "Cedarville Cursive";
+  font-size: 30px;
+}
+
+.about__welcome-text {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 25px;
+  max-width: 75%;
+}
+
+.about__bg-list {
+  margin-bottom: 100px;
+  max-width: 80%;
+}
+
+.about__info-item {
+  font-size: 20px;
+}
+
+.about__tt-link {
+  text-decoration: none;
+  color: rgb(136, 46, 46);
+  font-weight: 500;
+}
+
+/* STICKERS */
+
+.about__sticker-brown {
+  position: absolute;
+  top: 150px;
+  left: -200px;
+  z-index: -1;
+  width: 1500px;
+  height: 425px;
+  border-radius: 20px;
+  background-color: #a95e39;
+  opacity: 80%;
+}
+
+.about__dashed-stickers {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.about__sticker-dashed {
+  width: 100px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: rgb(105, 77, 105);
+}
+
+/* ABOUT ME - DISCLAIMERS */
+
+.about__disclaimers-items {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.about__disclaimers-title {
+  font-family: "Gruppo";
+  font-size: 36px;
+  color: darkred;
+  font-weight: 900;
+  letter-spacing: 10px;
+  text-align: center;
+  margin: 60px 0 0 0;
+  padding: 0;
+}
+
+.about__disclaimers-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+  margin: 20px 0 60px;
+  padding: 0 30px 0 0;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  list-style: none;
+}
+
+.about__sticker-red {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 0 10px;
+  background-color: #b5491f;
+}
+
+/* ABOUT ME - SELFIE PICTURE */
+
+.about__column-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 40%;
+}
+
+.about__selfie-wrapper {
+  margin: 50px 0 0 0;
+  padding: 0px;
+  border-radius: 12%;
+  overflow: hidden;
+}
+
+.about__selfie {
+  width: 100%;
+  height: 100%;
+}
+
+.about__stickers-green {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 300px;
+  right: 15px;
+  width: 70px;
+  height: 250px;
+}
+
+.about__sticker-green {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgb(87, 142, 121);
+}
