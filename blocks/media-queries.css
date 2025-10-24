@@ -495,7 +495,7 @@
     align-items: flex-end;
   }
   .header__link {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   /* ABOUT */
@@ -506,6 +506,7 @@
     width: 200px;
     height: 400px;
     border-radius: 5%;
+    color: #572d1d;
   }
 
   .about__column-right {
@@ -613,6 +614,14 @@
     font-size: 30px;
   }
 
+  .info-block__title {
+    font-size: 20px;
+  }
+
+  .info-block__feature {
+    font-size: 18px;
+  }
+
   /* PROJECTS */
   .project__detail {
     font-size: 20px;
@@ -668,16 +677,16 @@
     font-size: 16px;
   }
 
-  .info-block__title {
-    font-size: 20px;
-  }
-
   .info-block__feature {
     font-size: 16px;
   }
 
   .info-block__contact-link {
     font-size: 16px;
+  }
+
+  .info-block__title {
+    font-size: 20px;
   }
 
   /* PROJECTS */
