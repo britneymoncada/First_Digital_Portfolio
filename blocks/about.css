@@ -12,13 +12,14 @@
 
 .about__subtitle {
   font-family: "Cedarville Cursive";
-  font-size: 30px;
+  font-size: 40px;
+  margin-bottom: 0px;
 }
 
 .about__welcome-text {
-  font-size: 20px;
+  font-size: 25px;
   line-height: 1.5;
-  margin-top: 25px;
+  margin: 0px;
   max-width: 75%;
 }
 
